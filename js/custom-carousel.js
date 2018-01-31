@@ -21,7 +21,6 @@ $(document).ready(function() {
       })
 })
 
- 
  $(document).ready(function() {
               var owl = $('.group-our-customers');
               owl.owlCarousel({

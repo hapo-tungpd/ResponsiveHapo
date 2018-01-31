@@ -530,11 +530,11 @@ header {
 			font-size: 10px;
 			padding-top: 14px;
 			font-weight: 500;
-			color: #D0D8DC;
+			color: $color_5;
 			list-style: none;
 
 			a {
-				color: #D0D8DC;
+				color: $color_5;
 			}
 		}
 
@@ -561,7 +561,7 @@ header {
 
 		p {
 			font-size: 10px;
-			color: #D0D8DC;
+			color: $color_5;
 			font-weight: 500;
 			line-height: 13px;
 		}
