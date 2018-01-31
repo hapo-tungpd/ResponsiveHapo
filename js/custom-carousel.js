@@ -6,6 +6,9 @@ $(document).ready(function() {
           loop: true,
           responsive: {
             0: {
+              autoplay:true,
+              autoplayTimeout:2000,
+              autoplayHoverPause:true,
               items: 3,
             },
             768: {
@@ -16,12 +19,6 @@ $(document).ready(function() {
             }
           }
       })
-      $('.play').on('click', function() {
-          owl.trigger('play.owl.autoplay', [1000])
-      })
-      $('.stop').on('click', function() {
-          owl.trigger('stop.owl.autoplay')
-  })
 })
 
  
@@ -29,9 +26,11 @@ $(document).ready(function() {
               var owl = $('.group-our-customers');
               owl.owlCarousel({
                 padding: 10,
+                autoplay:true,
+                autoplayTimeout:2000,
+                autoplayHoverPause:true,
                 // nav: true,
                 loop: true,
-                autoplayHoverPause: true,
                 responsive: {
                   0: {
                     items: 4

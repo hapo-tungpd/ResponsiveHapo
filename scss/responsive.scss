@@ -1,0 +1,1284 @@
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	
+	%button-992-1199 {
+		margin-top: 0px;
+		padding-bottom: 100px;
+	}
+
+	body {
+		width: 100%;
+	}
+
+	header {
+		background-repeat: no-repeat;
+
+		.image-header {
+			padding-top: 130px;
+		}
+	
+		.icons-header {
+			padding-left: 1.34%;
+		}
+
+		.text-icons-header {
+			margin-left: 14%;
+
+			.faster {
+				padding-left: 26%
+			}
+
+			.together {
+				padding-left: 17.68%;
+			}
+		}
+	}
+	
+	.daily-report{
+		.button-daily-report {
+			@extend %button-992-1199;
+		}
+	}
+	
+	.today-i-learnt {
+		.today-i-learnt-title {
+			p {
+				font-size: 13.5px;
+			}
+		}
+	}
+	
+	.our-customers {
+		.our-customers-content {
+			.ti-quote-right {
+				margin-right: 3px;
+				float: right;
+			}
+
+			.ti-quote-left {
+				margin-left: -13px;
+			}
+
+			.content-our-customers {
+				margin-top: -15px;
+			}
+		}
+	}
+	.members {
+		.members-title {
+			p {
+				font-size: 13.5px;
+			}
+		}
+
+		.button-members {
+			@extend %button-992-1199;
+		}
+	}
+
+	.customers {
+		.customers-title {
+			p {
+				font-size: 13.5px;
+			}
+		}
+
+		.button-customers {
+			@extend %button-992-1199;
+		}
+	}
+
+	.projects {
+		.image-projects {
+			margin-top: -110px;
+		}
+		.button-projects {
+			@extend %button-992-1199;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+ 	body {
+		width: 100%;
+	}
+	.start-now {
+		padding: 13px 27px;
+		font-size: 14px;
+		line-height: 19px;
+		}
+	
+	%start-center {
+		text-align: center;
+		margin-top: 0px;
+		padding-bottom: 50px;
+	}
+	
+	header {
+		background-repeat: no-repeat;
+		.about-us {
+			padding-left: 15%;
+		}
+
+		.sign-in {
+			padding-top: 20px
+		}
+
+		.image-header {
+			padding-top: 30px;
+			label {
+				width: 144px;
+				height: 43px;
+
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+
+		.icons-header {
+			padding-top: 40px;
+			text-align: center;
+			padding-left: 8%;
+			.ti-gift {
+				font-size: 24px;
+				letter-spacing: 2px;
+			}
+
+			.ti-alarm-clock {
+				font-size: 24px;
+				letter-spacing: 2px;
+				padding-left: 34.61%;
+			}
+
+			.ti-thumb-up {
+				padding-left: 32.5%;
+				font-size: 24px;
+				letter-spacing: 2px;
+			}
+		}
+
+		.text-icons-header {
+			padding-left: 5.5%;
+			padding-top: 7px;
+			.better {
+				font-size: 24px;
+				font-weight: 300;
+				line-height: 32px;
+			}
+
+			.faster {
+				font-size: 24px;
+				font-weight: 300;
+				line-height: 32px;
+				padding-left: 24%;
+			}
+
+			.together {
+				font-size: 24px;
+				font-weight: 300;
+				line-height: 32px;
+				padding-left: 18%;
+			}
+		}
+
+		.text-title-header {
+			padding-top: 15px;
+
+			p {
+				font-size: 14px;
+				line-height: 19px;
+			}
+		}
+
+		.button-start-header {
+			padding-top: 30px;
+			padding-bottom: 84.2px;
+		}
+	}
+
+	.today-i-learnt {
+		.image-today-i-learnt {
+			margin-top: 0px;
+		}
+
+		.today-i-learnt-header {
+			padding-top: 50px;
+
+			.ti-bookmark-alt {
+				font-size: 30px;
+			}
+
+			p {
+				line-height: 57px;
+				font-size: 36px;
+				padding-left: 13px;
+			}
+		}
+
+		.today-i-learnt-title {
+			font-size: 14px;
+			text-align: center;
+		}
+
+		.button-today-i-learnt {
+			text-align: center;
+			margin-top: 0px;
+			padding-bottom: 50px;
+		}
+	}
+
+	.daily-report {
+		.daily-report-img {
+			margin-top: 0px;
+		}
+
+		.daily-report-header {
+			padding-top: 50px;
+
+			.ti-write {
+				font-size: 30px;
+			}
+
+			p {
+				line-height: 57px;
+				font-size: 36px;
+				font-weight: 300;
+			}
+		}
+
+		.daily-report-title {
+			text-align: center;
+		}
+
+		.button-daily-report {
+			text-align: center;
+			margin-top: 0px;
+			padding-bottom: 50px;
+		}
+	}
+
+	.group {
+		.group-information {
+			padding-bottom: 50px;
+			padding-top: 45px;
+
+			.info {
+				width: 0px;
+			}
+		}
+	}
+
+	.members {
+		.image-members {
+			margin-top: 0px;
+		}
+
+		.members-header {
+			padding-top: 50px;
+
+			.ti-user {
+				font-size: 30px;
+			}
+
+			p {
+				font-size: 36px;
+				font-weight: 300;
+				line-height: 57px;
+			}
+		}
+
+		.members-title {
+			text-align: center;
+		}
+
+		.button-members {
+			text-align: center;
+			margin-top: 0px;
+			padding-bottom: 30.93px;
+		}
+	}
+
+	.customers {
+		.image-customers {
+			margin-top: 0px;
+		}
+
+		.customers-header {
+			padding-top: 50px;
+
+			.ti-face-smile {
+				font-size: 30px;
+			}
+
+			p {
+				font-size: 36px;
+				font-weight: 300;
+				line-height: 57px;
+			}
+		}
+
+		.customers-title {
+			text-align: center;
+		}
+
+		.button-customers {
+			text-align: center;
+			margin-top: 0px;
+			padding-bottom: 30px;
+		}
+	}
+
+	.our-customers {
+		.our-customers-information {
+			.our-customers-header {
+				p {
+					font-size: 36px;
+					line-height: 48px;
+					font-weight: 300;
+				}
+			}
+
+			.group-our-customers {
+				padding-top: 20px;
+			}
+		}
+		
+		.our-customers-content {
+			.ti-quote-right {
+				float: right;
+			}
+
+			.ti-quote-left {
+				float: left;
+			}
+
+			.content-our-customers {
+				margin-top: -15px;
+			}
+		}
+	}
+
+	.projects {
+		.image-projects {
+			margin-top: 0px;
+		}
+
+		.projects-header {
+			padding-top: 50px;
+
+			.ti-calendar {
+				font-size: 30px;
+			}
+
+			p {
+				font-size: 36px;
+				font-weight: 300;
+				line-height: 57px;
+			}
+		}
+
+		.projects-title {
+			text-align: center;
+		}
+
+		.button-projects {
+			text-align: center;
+			margin-top: 0px;
+			padding-bottom: 50px;
+		}
+	}
+
+	.footer {
+		.group-footer {
+			span {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@media screen and (width: 768px) {
+	header {
+		background-image: url("../images/Landing-page-TB/Rectangle.jpg");
+	}
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		width: 100%;
+	}
+
+	header {
+		.about-us {
+			padding-left: 45%;
+		}
+
+		.sign-in {
+			padding-top: 13px;
+		}
+
+		.image-header {
+			text-align: center;
+			padding-top: 8px;
+
+			label {
+				width: 96px;
+
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+
+		.icons-header {
+			padding-left: 9.5%;
+			padding-top: 20px;
+
+			.ti-gift {
+				font-size: 18px;
+				letter-spacing: 1px;
+			}
+
+			.ti-alarm-clock {
+				padding-left: 35.21%;
+				font-size: 18px;
+				letter-spacing: 1px;
+			}
+
+			.ti-thumb-up {
+				padding-left: 33%;
+				font-size: 18px;
+				letter-spacing: 1px;
+			}
+		}
+
+		.text-icons-header {
+			padding-left: 7%;
+			padding-top: 8px;
+
+			.better {
+				font-size: 18px;
+				line-height: 24px;
+			}
+
+			.faster {
+				padding-left: 27%;
+				font-size: 18px;
+				line-height: 24px;
+			}
+
+			.together {
+				padding-left: 20.5%;
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+
+		.text-title-header {
+			padding-top: 15px;
+			p {
+				font-size: 9px;
+				line-height: 11px;
+			}
+		}
+
+		.button-start-header {
+			padding-top: 15px;
+			padding-bottom: 26.75px;
+		}
+	}
+
+	.today-i-learnt {
+		.image-today-i-learnt {
+			margin-top: 0px;
+		}
+
+		.today-i-learnt-header {
+			padding-top: 30.25px;
+
+			.ti-bookmark-alt {
+				padding-top: 5px;
+				font-size: 20px;
+			}
+
+			p {
+				font-size: 24px;
+				line-height: 32px;
+			}
+		}
+
+		.today-i-learnt-title {
+			p {
+				font-size: 13px;
+				text-align: center;
+			}
+		}
+
+		.today-i-learnt-content {
+			padding-top: 21px;
+		}
+
+		.button-today-i-learnt {
+			text-align: center;
+			margin-top: 0px;
+			padding-bottom: 30px;
+		}
+	}
+
+	.daily-report {
+		.daily-report-img {
+			margin-top: 0px;
+		}
+
+		.daily-report-header {
+			padding-top: 30px;
+
+			.ti-write {
+				padding-top: 5px;
+				font-size: 20px;
+			}
+
+			p {
+				font-size: 24px;
+				line-height: 32px;
+			}
+		}
+
+		.daily-report-title {
+			font-size: 13px;
+			line-height: 24px;
+			text-align: center;
+		}
+
+		.content-daily-report {
+			p {
+				font-size: 13px;
+				text-align: center;
+			}
+		}
+
+		.button-daily-report {
+			text-align: center;
+			margin-top: 0px;
+			padding-bottom: 30px;
+		}
+	}
+
+	.group {
+		.group-information {
+			padding-bottom: 35px;
+		}
+	}
+
+	.our-customers {
+		.our-customers-information {
+			.our-customers-header {
+				p {
+					font-size: 24px;
+					line-height: 32px;
+					font-weight: 300;
+				}
+			}
+
+			.group-our-customers {
+				padding-top: 20px;
+			}
+		}
+		
+		.our-customers-content {
+			.ti-quote-right {
+				float: right !important;
+			}
+
+			.ti-quote-left {
+				float: left;
+			}
+
+			.content-our-customers {
+				margin-top: -15px;
+			}
+		}
+	}
+	.members {
+		.members-header {
+			padding-top: 30px;
+
+			.ti-user {
+				padding-top: 5px;
+				font-size: 20px;
+			}
+
+			p {
+				font-size: 24px;
+				line-height: 32px;
+			}
+		}
+
+		.members-title {
+			text-align: center;
+			font-size: 13px;
+		}
+
+		.image-members {
+			margin-top: 0px;
+			padding-top: 20.56px;
+		}
+
+		.button-members {
+			text-align: center;
+			margin-top: 0px;
+			padding-bottom: 30px;
+		}
+	}
+
+	.customers {
+		.customers-header {
+			padding-top: 30px;
+
+			.ti-face-smile {
+				padding-top: 5px;
+				font-size: 20px;
+			}
+
+			p {
+				font-size: 24px;
+				line-height: 32px;
+			}
+		}
+
+		.customers-title {
+			text-align: center;
+			font-size: 13px;
+		}
+
+		.image-customers {
+			margin-top: 0px;
+			padding-bottom: 20.56px;
+		}
+
+		.button-customers {
+			text-align: center;
+			margin-top: 0px;
+			padding-bottom: 30px;
+		}
+	}
+
+	.projects {
+		.projects-header {
+			padding-top: 30px;
+
+			.ti-calendar {
+				padding-top: 5px;
+				font-size: 20px;
+			}
+
+			p {
+				font-size: 24px;
+				line-height: 32px;
+			}
+		}
+
+		.projects-title {
+			p {
+				font-size: 13px;
+				text-align: center;
+			}
+		}
+
+		.projects-content {
+			padding-top: 21px;
+
+			p {
+				font-size: 13px;
+				line-height: 21px;
+				text-align: justify;
+			}
+		}
+
+		.image-projects {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.button-projects {
+			text-align: center;
+			margin-top: 0px;
+			padding-bottom: 30px;
+		}
+	}
+
+	.footer {
+		.footer-logo {
+			label {
+				width: 96px;
+			}
+		}
+
+		.group-footer {
+			padding-top: 25px;
+
+			span {
+				font-size: 12px;
+				line-height: 16px;
+				font-weight: 500;
+			}
+		}
+
+		.group-link-footer {
+			padding-top: 24px;
+			padding-bottom: 29px;
+		}
+
+		.copy-right-2017 {
+			padding-bottom: 10px;
+			margin-top: -45px;
+			float: right;
+		}
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 584px) {
+	%custom-header-481-584 {
+		span {
+			margin-left: -20px;
+		}
+	}
+	header {
+		.text-icons-header {
+			.faster {
+				padding-left: 21%;
+			}
+
+			.together {
+				padding-left: 13.5%;
+			}
+		}
+	}
+
+	.today-i-learnt {
+		.today-i-learnt-header {
+			@extend %custom-header-481-584;
+		}
+	}
+
+	.daily-report {
+		.daily-report-header {
+			@extend %custom-header-481-584;
+		}
+	}
+
+	.group {
+		.group-information {
+			padding-bottom: 30px;
+		}
+	}
+
+	.our-customers {
+		.our-customers-information {
+			.our-customers-header {
+				p {
+					font-size: 24px;
+					line-height: 32px;
+					font-weight: 300;
+				}
+			}
+
+			.group-our-customers {
+				padding-top: 20px;
+			}
+		}
+		
+		.our-customers-content {
+			.ti-quote-right {
+				float: right !important;
+			}
+
+			.ti-quote-left {
+				float: left;
+			}
+
+			.content-our-customers {
+				margin-top: -15px;
+			}
+		}
+	}
+	.members {
+		.members-header {
+			@extend %custom-header-481-584;
+		}
+	}
+
+	.customers {
+		.customers-header {
+			@extend %custom-header-481-584;
+		}
+	}	
+
+	.projects {
+		.projects-header {
+			@extend %custom-header-481-584;
+		}
+	}
+
+	.footer {
+		.copy-right-2017 {
+			margin-top: -45px;
+			padding-bottom: 10px;
+		}
+	}
+}
+
+@media screen and (max-width:480px){
+	header{
+		background-image: url("../images/Landing-page-MB/Rectangle.jpg");
+	}
+
+	.group {
+		.group-information {
+			padding-top: 38.75px;
+			padding-bottom: 30px;
+
+			.info {
+				width: 8.75px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 436px) and (max-width: 480px) {
+	%custom-header-436-480 {
+		span {
+			margin-left: -29px;
+		}
+
+		p {
+			padding-left: 4px;
+		}
+	}
+
+	header {
+		background-repeat: no-repeat;
+		.about-us {
+			padding-left: 37%;
+		}
+
+		.icons-header {
+			padding-left: 7.5%;
+
+			.ti-gift {
+
+			}
+
+			.ti-alarm-clock {
+				padding-left: 32%;
+			}
+
+			.ti-thumb-up {
+				padding-left: 29%;
+			}
+		}
+
+		.text-icons-header {
+			padding-left: 4%;
+
+			.faster {
+				padding-left: 19.5%;
+			}
+
+			.together {
+				padding-left: 12%;
+			}
+		}
+
+		.button-start-header {
+			input {
+				font-size: 14;
+				padding: 11px 17px ;
+			}
+		}
+	}
+
+	.today-i-learnt {
+		.today-i-learnt-header {
+			@extend %custom-header-436-480;
+		}
+	}
+
+	.daily-report {
+		.daily-report-header {
+			@extend %custom-header-436-480;
+		}
+	}
+	
+	.group {
+		.group-information {
+			padding-top: 38.75px;
+			padding-bottom: 30px;
+
+			.info {
+				width: 8.75px;
+			}
+		}
+	}
+
+	.our-customers {
+		.our-customers-information {
+			.our-customers-header {
+				p {
+					font-size: 24px;
+					line-height: 32px;
+					font-weight: 300;
+				}
+			}
+
+			.group-our-customers {
+				padding-top: 20px;
+			}
+		}
+		
+		.our-customers-content {
+			.ti-quote-right {
+				float: right !important;
+			}
+
+			.ti-quote-left {
+				float: left;
+			}
+
+			.content-our-customers {
+				margin-top: -15px;
+			}
+		}
+	}
+
+	.members {
+		.members-header {
+			@extend %custom-header-436-480;
+		}
+	}
+
+	.customers {
+		.customers-header {
+			@extend %custom-header-436-480;
+		}
+	}	
+
+	.projects {
+		.projects-header {
+			@extend %custom-header-436-480;
+		}
+	}
+
+	.footer {
+		.copy-right-2017 {
+			margin-top: -45px;
+			padding-bottom: 10px;
+		}
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 435px){
+	%custom-header-401-435 {
+		span {
+			font-size: 16px;
+			margin-left: -25px;
+		}
+
+		p {
+			padding-left: 9px;
+			font-size: 24px;
+		}
+	}
+	header {
+		background-repeat: no-repeat;
+		.about-us {
+			padding-left: 25%;
+		}
+
+		.icons-header {
+			padding-left: 7.5%;
+
+			.ti-gift {
+
+			}
+
+			.ti-alarm-clock {
+				padding-left: 30.21%;
+			}
+
+			.ti-thumb-up {
+				padding-left: 28%;
+			}
+		}
+
+		.text-icons-header {
+			padding-left: 3%;
+
+			.faster {
+				padding-left: 14%;
+			}
+
+			.together {
+				padding-left: 10%;
+			}
+		}
+
+		.button-start-header {
+			input {
+				font-size: 14px;
+				padding: 11px 17px;
+			}
+		}
+	}
+
+	.today-i-learnt {
+		.today-i-learnt-header {
+			@extend %custom-header-401-435;
+		}
+	}
+
+	.daily-report {
+		.daily-report-header {
+			@extend %custom-header-401-435;
+		}
+	}
+	
+	.group {
+		.group-information {
+			padding-bottom: 25px;
+		}
+	}
+
+	.our-customers {
+		.our-customers-information {
+			.our-customers-header {
+				p {
+					font-size: 24px;
+					line-height: 32px;
+					font-weight: 300;
+				}
+			}
+
+			.group-our-customers {
+				padding-top: 20px;
+			}
+		}
+
+		.our-customers-content {
+			.ti-quote-right {
+				float: right !important;
+			}
+
+			.ti-quote-left {
+				float: left;
+			}
+
+			.content-our-customers {
+				margin-top: -15px;
+			}
+		}
+	}
+	.members {
+		.members-header {
+			@extend %custom-header-401-435;
+		}
+	}
+	
+	.customers {
+		.customers-header {
+			@extend %custom-header-401-435;
+		}
+	}	
+
+	.projects {
+		.projects-header {
+			@extend %custom-header-401-435;
+		}
+	}
+
+	.footer {
+		.group-link-footer {
+			a {
+				font-size: 13px;
+				padding-left: 14px;
+			}
+		}
+
+		.copy-right-2017 {
+			margin-top: -45px;
+			padding-bottom: 10px;
+
+			p {
+				font-size: 10px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 400px){
+	%custom-button-360-400 {
+		padding: 7px 19px;
+		font-size: 15px;
+	}
+	%custom-header-360-400 {
+		span {
+			font-size: 15px;
+			margin-left: -22px;
+		}
+
+		p {
+			padding-left: 10px;
+			font-size: 22px;
+		}
+	}
+	header {
+		background-repeat: no-repeat;
+		.about-us {
+			padding-left: 14%;
+		}
+
+		.icons-header {
+			padding-left: 7%;
+
+			.ti-alarm-clock {
+				padding-left: 30%;
+			}
+
+			.ti-thumb-up {
+				padding-left: 25%;
+			}
+		}
+
+		.text-icons-header {
+			padding-left: 3%;
+
+			.faster {
+				padding-left: 14%;
+			}
+
+			.together {
+				padding-left: 1%;
+			}
+		}
+		.button-start-header {
+			input {
+				@extend %custom-button-360-400;
+			}
+		}
+	}
+
+	.today-i-learnt {
+		.today-i-learnt-header {
+			@extend %custom-header-360-400;
+		}
+
+		.button-today-i-learnt {
+			input {
+				@extend %custom-button-360-400;
+			}
+		}
+	}
+
+	.daily-report {
+		.daily-report-header {
+			@extend %custom-header-360-400;
+		}
+
+		.button-daily-report {
+			input {
+				@extend %custom-button-360-400;
+			}
+		}
+	}
+	
+	.group {
+		.group-information {
+			padding-bottom: 20px;
+		}
+	}
+
+	.our-customers {
+		.our-customers-information {
+			.our-customers-header {
+				p {
+					font-size: 24px;
+					line-height: 32px;
+					font-weight: 300;
+				}
+			}
+
+			.group-our-customers {
+				padding-top: 20px;
+			}
+		}
+
+		.our-customers-content {
+			.ti-quote-right {
+				float: right !important;
+			}
+
+			.ti-quote-left {
+				float: left;
+			}
+
+			.content-our-customers {
+				margin-top: -15px;
+			}
+		}
+	}
+
+	.members {
+		.members-header {
+			@extend %custom-header-360-400;
+		}
+
+		.button-members {
+			input {
+				@extend %custom-button-360-400;
+			}
+		}
+	}
+
+	.customers {
+		.customers-header {
+			@extend %custom-header-360-400;
+		}
+
+		.button-customers {
+			input {
+				@extend %custom-button-360-400;
+			}
+		}
+	}	
+
+	.projects {
+		.projects-header {
+			@extend %custom-header-360-400;
+		}
+
+		.button-projects {
+			input {
+				@extend %custom-button-360-400;
+			}
+		}
+	}
+
+	.footer {
+		.group-link-footer {
+			a {
+				font-size: 13px;
+				padding-left: 14px;
+			}
+		}
+
+		.copy-right-2017 {
+			margin-top: -45px;
+			padding-bottom: 10px;
+
+			p {
+				font-size: 8.5px;
+			}
+		}
+	}
+}

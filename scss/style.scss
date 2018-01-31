@@ -1,28 +1,4 @@
-@font-face {
-	font-family: 'Roboto-Light';
-	src: url('../fonts/Roboto-Light.ttf');  
-}
-@font-face {
-	font-family: 'Roboto-Regular';
-	src: url('../fonts/Roboto-Regular.ttf');  
-}
-@font-face {
-	font-family: 'Roboto-Italic';
-	src: url('../fonts/Roboto-Italic.ttf');  
-}
-@font-face {
-	font-family: 'Roboto-Medium';
-	src: url('../fonts/Roboto-Medium.ttf');  
-}
-
-@font-face {
-	font-family: 'Roboto-MediumItalic';
-	src: url('../fonts/Roboto-MediumItalic.ttf');  
-}
-@font-face {
-	font-family: 'Roboto-LightItalic';
-	src: url('../fonts/Roboto-LightItalic.ttf');  
-}
+@import "variables";
 p,
 h1,
 h2,
@@ -33,78 +9,20 @@ h6 {
   margin: 0 !important;
 }
 
-%icon-general {
-	float: left;
-	font-size: 48px;
-	letter-spacing: 4px;
-	color: #283238;
-}
-
-%icon-mask-header {
-	float: left;
-	font-size: 36px;
-	color: #444444;
-	padding-top: 13px;
-}
-
-%text-general {
-	font-size: 36px;	
-	font-weight: 300;	
-	line-height: 48px;
-	color: #283238;
-	font-family: Roboto-Light;
-}
-
-%text-header {
-	padding-left: 19px;
-	color: #444444;		
-	font-size: 48px;
-	float: left;	
-	font-weight: 300;
-	line-height: 63px;
-	font-family: Roboto-Light;
-}
-
-%transition {
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-}
-
-%title{
-	color: #283238;
-	font-size: 14px;
-	font-style: italic;
-	line-height: 19px;
-}
-%content {
-	color: #283238;
-	font-size: 13px;
-	line-height: 24px;
-	text-align: justify;
-}
-
-%button-start {
-	padding-top: 30px;
-	padding-bottom: 100px;
-}
-
 .btn-sign-in {
 	&:hover {
 		@extend %transition;
-		color: #FFFFFF;
+		color: $color_1;
 		background: linear-gradient(135deg, #B4EC51 0%,#429321 100%);
 	}
 }
 
 .start-now {
-	padding: 13px 40px;
+	padding: 15px 45px;
 	border-radius: 100px;
 	background: linear-gradient(311.12deg, #B4EC51 0%, #429321 100%);	
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
-	color: #FFFFFF;
+	color: $color_1;
 	border: none;
 	font-size: 18px;
 	font-weight: 500;
@@ -133,9 +51,9 @@ header {
 		padding-top: 43px;
 		input{
 			padding: 10px 16px;	
-			border: 2px solid #8BC34A;	
+			border: 2px solid $color_4;	
 			border-radius: 100px;
-			color: #8BC34A;
+			color: $color_4;
 			cursor: pointer;
 			font-size: 12px;
 			letter-spacing: 1px;
@@ -318,7 +236,7 @@ header {
 				}
 
 				p {
-					color: #FFFFFF;
+					color: $color_1;
 					text-align: center;
 					font-size: 16px;
 					line-height: 21px;
@@ -365,7 +283,7 @@ header {
 
 			.ti-check-box {
 				font-size: 18px;
-				color: #8BC34A;
+				color: $color_4;
 			}
 		}
 	}
@@ -427,7 +345,7 @@ header {
 
 			.ti-unlock {
 				font-size: 18px;
-				color: #8BC34A;
+				color: $color_4;
 			}
 
 			.ti-cup {
@@ -457,7 +375,7 @@ header {
 			text-align: center;
 
 			p {
-				color: #FFFFFF;
+				color: $color_1;
 				line-height: 63px;
 				font-family: Roboto-Light;
 				font-size: 48px;
@@ -483,7 +401,7 @@ header {
 			text-align: center;
 
 			.name {
-				color: #FFFFFF;
+				color: $color_1;
 				font-size: 13px;
 				font-weight: 300;
 				line-height: 14px;
@@ -492,7 +410,7 @@ header {
 			}
 
 			.job {
-				color: #FFFFFF;	
+				color: $color_1;	
 				font-weight: 300;
 				padding-bottom: 12px;
 				line-height: 14px;
@@ -506,7 +424,7 @@ header {
 		.ti-quote-left {
 			font-size: 72px;
 			opacity: 0.4;
-			color: #FFFFFF;
+			color: $color_1;
 		}
 
 		.ti-quote-right {
@@ -519,7 +437,7 @@ header {
 			margin-top: -24px;
 			@extend %text-general;
 			font-size: 18px;
-			color: #FFFFFF;
+			color: $color_1;
 			line-height: 30px;
 			text-align: justify;
 		}
@@ -554,8 +472,6 @@ header {
 		p {
 			@extend %content;
 		}
-
-		
 	}
 
 	.image-projects {
@@ -603,13 +519,15 @@ header {
 		padding-top: 54px;
 
 		span {
-			color: #8BC34A;
+			font-size: 13px;
+			color: $color_4;
 			font-weight: 500;
 			line-height: 18px;
 			font-family: Roboto-Regular;
 		}
 
 		.text-top-footer {
+			font-size: 10px;
 			padding-top: 14px;
 			font-weight: 500;
 			color: #D0D8DC;
@@ -630,9 +548,9 @@ header {
 		padding-top: 108px;
 
 		a {
-			text-decoration: none;
-			color: #8BC34A;
 			font-size: 13px;
+			text-decoration: none;
+			color: $color_4;
 			line-height: 13px;
 		}
 	}
@@ -642,6 +560,7 @@ header {
 		padding-bottom: 57px;
 
 		p {
+			font-size: 10px;
 			color: #D0D8DC;
 			font-weight: 500;
 			line-height: 13px;
@@ -649,617 +568,4 @@ header {
 	}
 }
 
-// Responsive TB
-@media screen and (width: 768px) {
-	header {
-		background-image: url("../images/Landing-page-TB/Rectangle.jpg");
-	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px){
-
- 	body {
-		width: 100%;
-	}
-	.start-now {
-		padding: 13px 27px;
-		font-size: 14px;
-		line-height: 19px;
-		}
-	
-	%start-center {
-		text-align: center;
-		margin-top: 0px;
-		padding-bottom: 50px;
-	}
-	
-	header {
-		.about-us {
-			padding-left: 15%;
-		}
-
-		.sign-in {
-			padding-top: 20px
-		}
-
-		.image-header {
-			padding-top: 30px;
-			label {
-				width: 144px;
-				height: 43px;
-
-				img {
-					max-width: 100%;
-				}
-			}
-		}
-
-		.icons-header {
-			padding-top: 40px;
-			text-align: center;
-			padding-left: 8%;
-			.ti-gift {
-				font-size: 24px;
-				letter-spacing: 2px;
-			}
-
-			.ti-alarm-clock {
-				font-size: 24px;
-				letter-spacing: 2px;
-				padding-left: 34.61%;
-			}
-
-			.ti-thumb-up {
-				padding-left: 32.5%;
-				font-size: 24px;
-				letter-spacing: 2px;
-			}
-		}
-
-		.text-icons-header {
-			padding-left: 5.5%;
-			padding-top: 7px;
-			.better {
-				font-size: 24px;
-				font-weight: 300;
-				line-height: 32px;
-			}
-
-			.faster {
-				font-size: 24px;
-				font-weight: 300;
-				line-height: 32px;
-				padding-left: 24%;
-			}
-
-			.together {
-				font-size: 24px;
-				font-weight: 300;
-				line-height: 32px;
-				padding-left: 18%;
-			}
-		}
-
-		.text-title-header {
-			padding-top: 15px;
-
-			p {
-				font-size: 14px;
-				line-height: 19px;
-			}
-		}
-
-		.button-start-header {
-			padding-top: 30px;
-			padding-bottom: 84.2px;
-		}
-	}
-
-	.today-i-learnt {
-		.image-today-i-learnt {
-			margin-top: 0px;
-		}
-
-		.today-i-learnt-header {
-			padding-top: 50px;
-
-			.ti-bookmark-alt {
-				font-size: 30px;
-			}
-
-			p {
-				font-size: 36px;
-				padding-left: 13px;
-			}
-		}
-
-		.today-i-learnt-title {
-			font-size: 14px;
-			text-align: center;
-		}
-
-		.button-today-i-learnt {
-			text-align: center;
-			margin-top: 30px;
-			padding-bottom: 50px;
-		}
-	}
-
-	.daily-report {
-		.daily-report-img {
-			margin-top: 0px;
-		}
-
-		.daily-report-header {
-			padding-top: 50px;
-
-			.ti-write {
-				font-size: 30px;
-			}
-
-			p {
-				font-size: 36px;
-				font-weight: 300;
-				line-height: 48px;
-			}
-		}
-
-		.daily-report-title {
-			text-align: center;
-		}
-
-		.button-daily-report {
-			text-align: center;
-			margin-top: 30px;
-			padding-bottom: 50px;
-		}
-	}
-
-	.group {
-		.group-information {
-			padding-bottom: 50px;
-			padding-top: 48.75px;
-		}
-	}
-
-	.members {
-		.image-members {
-			margin-top: 0px;
-		}
-
-		.members-header {
-			padding-top: 50px;
-
-			.ti-user {
-				font-size: 30px;
-			}
-
-			p {
-				font-size: 36px;
-				font-weight: 300;
-				line-height: 48px;
-			}
-		}
-
-		.members-title {
-			text-align: center;
-		}
-
-		.button-members {
-			text-align: center;
-			margin-top: 30px;
-			padding-bottom: 30.93px;
-		}
-	}
-
-	.customers {
-		.image-customers {
-			margin-top: 0px;
-		}
-
-		.customers-header {
-			padding-top: 50px;
-
-			.ti-face-smile {
-				font-size: 30px;
-			}
-
-			p {
-				font-size: 36px;
-				font-weight: 300;
-				line-height: 48px;
-			}
-		}
-
-		.customers-title {
-			text-align: center;
-		}
-
-		.button-customers {
-			text-align: center;
-			margin-top: 30px;
-			padding-bottom: 30px;
-		}
-	}
-
-	.our-customers {
-		.our-customers-information {
-			.our-customers-header {
-				p {
-					font-size: 36px;
-					line-height: 48px;
-					font-weight: 300;
-				}
-			}
-
-			.group-our-customers {
-				padding-top: 20px;
-			}
-		}
-		
-		.our-customers-content {
-			.ti-quote-right {
-				float: right;
-			}
-
-			.ti-quote-left {
-				float: left;
-			}
-		}
-	}
-
-	.projects {
-		.image-projects {
-			margin-top: 0px;
-		}
-
-		.projects-header {
-			padding-top: 50px;
-
-			.ti-calendar {
-				font-size: 30px;
-			}
-
-			p {
-				font-size: 36px;
-				font-weight: 300;
-				line-height: 48px;
-			}
-		}
-
-		.projects-title {
-			text-align: center;
-		}
-
-		.button-projects {
-			text-align: center;
-			margin-top: 30px;
-			padding-bottom: 50px;
-		}
-	}
-}
-
-@media screen and (max-width:480px){
-	header{
-		background-image: url("../images/Landing-page-MB/Rectangle.jpg");
-	}
-}
-@media screen and (max-width: 767px) {
-	body {
-		width: 100%;
-	}
-
-	header {
-		.about-us {
-			padding-left: 30%;
-		}
-		.sign-in {
-
-			padding-top: 13px;
-		}
-
-		.image-header {
-			text-align: center;
-			padding-top: 8px;
-			label {
-				width: 96px;
-
-				img {
-					max-width: 100%;
-				}
-			}
-		}
-
-		.icons-header {
-			padding-left: 9.5%;
-			padding-top: 20px;
-			.ti-gift {
-				font-size: 18px;
-				letter-spacing: 1px;
-			}
-
-			.ti-alarm-clock {
-				padding-left: 35.21%;
-				font-size: 18px;
-				letter-spacing: 1px;
-			}
-
-			.ti-thumb-up {
-				padding-left: 33%;
-				font-size: 18px;
-				letter-spacing: 1px;
-			}
-		}
-
-		.text-icons-header {
-			padding-left: 7%;
-			padding-top: 8px;
-
-			.better {
-				font-size: 18px;
-				line-height: 24px;
-			}
-
-			.faster {
-				padding-left: 27%;
-				font-size: 18px;
-				line-height: 24px;
-			}
-
-			.together {
-				padding-left: 20.5%;
-				font-size: 18px;
-				line-height: 24px;
-			}
-		}
-
-		.text-title-header {
-			padding-top: 15px;
-			p {
-				font-size: 9px;
-				line-height: 11px;
-			}
-		}
-
-		.button-start-header {
-			padding-top: 15px;
-			padding-bottom: 26.75px;
-		}
-	}
-
-	.today-i-learnt {
-		.image-today-i-learnt {
-			margin-top: 0px;
-		}
-
-		.today-i-learnt-header {
-			padding-top: 30.25px;
-
-			.ti-bookmark-alt {
-				padding-top: 5px;
-				font-size: 20px;
-			}
-
-			p {
-				font-size: 24px;
-				line-height: 32px;
-			}
-		}
-
-		.today-i-learnt-title {
-			p {
-				font-size: 13px;
-				text-align: center;
-			}
-		}
-
-		.today-i-learnt-content {
-			padding-top: 21px;
-		}
-
-		.button-today-i-learnt {
-			text-align: center;
-			margin-top: 20px;
-			padding-bottom: 30px;
-		}
-	}
-
-	.daily-report {
-		.daily-report-img {
-			margin-top: 0px;
-		}
-
-		.daily-report-header {
-			padding-top: 30px;
-
-			.ti-write {
-				padding-top: 5px;
-				font-size: 20px;
-			}
-
-			p {
-				font-size: 24px;
-				line-height: 32px;
-			}
-		}
-
-		.daily-report-title {
-			font-size: 13px;
-			line-height: 24px;
-			text-align: center;
-		}
-
-		.content-daily-report {
-			p {
-				font-size: 13px;
-				text-align: center;
-			}
-		}
-
-		.button-daily-report {
-			text-align: center;
-			margin-top: 20px;
-			padding-bottom: 30px;
-		}
-	}
-	
-	.members {
-		.members-header {
-			padding-top: 30px;
-
-			.ti-user {
-				padding-top: 5px;
-				font-size: 20px;
-			}
-
-			p {
-				font-size: 24px;
-				line-height: 32px;
-			}
-		}
-
-		.members-title {
-			text-align: center;
-			font-size: 13px;
-		}
-
-		.image-members {
-			margin-top: 0px;
-			padding-top: 20.56px;
-		}
-
-		.button-members {
-			text-align: center;
-			margin-top: 20px;
-			padding-bottom: 30px;
-		}
-	}
-
-	.customers {
-		.customers-header {
-			padding-top: 30px;
-
-			.ti-face-smile {
-				padding-top: 5px;
-				font-size: 20px;
-			}
-
-			p {
-				font-size: 24px;
-				line-height: 32px;
-			}
-		}
-
-		.customers-title {
-			text-align: center;
-			font-size: 13px;
-		}
-
-		.image-customers {
-			margin-top: 0px;
-			padding-bottom: 20.56px;
-		}
-
-		.button-customers {
-			text-align: center;
-			margin-top: 20px;
-			padding-bottom: 30px;
-		}
-	}
-
-	.projects {
-		.projects-header {
-			padding-top: 30px;
-
-			.ti-calendar {
-				padding-top: 5px;
-				font-size: 20px;
-			}
-
-			p {
-				font-size: 24px;
-				line-height: 32px;
-			}
-		}
-
-		.projects-title {
-			p {
-				font-size: 13px;
-				text-align: center;
-			}
-		}
-
-		.projects-content {
-			padding-top: 21px;
-
-			p {
-				font-size: 13px;
-				line-height: 21px;
-				text-align: justify;
-			}
-		}
-
-		.image-projects {
-			text-align: center;
-			margin-top: 20px;
-		}
-
-		.button-projects {
-			text-align: center;
-			margin-top: 20px;
-			padding-bottom: 30px;
-		}
-	}
-
-	.footer {
-		.footer-logo {
-			label {
-				width: 96px;
-			}
-		}
-
-		.group-footer {
-			padding-top: 25px;
-
-			span {
-				font-size: 12px;
-				line-height: 16px;
-				font-weight: 500;
-			}
-		}
-
-		.group-link-footer {
-			padding-top: 24px;
-			padding-bottom: 29px;
-		}
-
-		.copy-right-2017 {
-			float: right;
-		}
-	}
-}
-
-@media screen and (min-width: 400px) and (max-width: 480px) {
-	header {
-		background-repeat: no-repeat;
-		.about-us{
-			padding-left: 26%;
-		}
-		
-		.icons-header {
-			padding-left: 7%;
-		}
-
-		.text-icons-header {
-			padding-left: 4%;
-
-			.faster {
-				padding-left: 20%;
-			}
-
-			.together {
-				padding-left: 12%;
-			}
-		}
-	}
-}
+@import "responsive";
