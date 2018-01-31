@@ -1,3 +1,10 @@
+
+@media screen and (min-width: 1200px ) and (max-width: 1920px) {
+	body {
+		width: 100%;
+	}
+}
+
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 	
 	%button-992-1199 {
@@ -97,7 +104,7 @@
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
  	body {
 		width: 100%;
@@ -405,6 +412,14 @@
 }
 
 @media screen and (max-width: 767px) {
+	%text-icon-header-767 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	%icon-header-767 {
+		font-size: 18px;
+		letter-spacing: 1px;
+	}
 	body {
 		width: 100%;
 	}
@@ -436,20 +451,17 @@
 			padding-top: 20px;
 
 			.ti-gift {
-				font-size: 18px;
-				letter-spacing: 1px;
+				@extend %icon-header-767;
 			}
 
 			.ti-alarm-clock {
 				padding-left: 35.21%;
-				font-size: 18px;
-				letter-spacing: 1px;
+				@extend %icon-header-767;
 			}
 
 			.ti-thumb-up {
 				padding-left: 33%;
-				font-size: 18px;
-				letter-spacing: 1px;
+				@extend %icon-header-767;
 			}
 		}
 
@@ -458,20 +470,17 @@
 			padding-top: 8px;
 
 			.better {
-				font-size: 18px;
-				line-height: 24px;
+				@extend %text-icon-header-767;
 			}
 
 			.faster {
 				padding-left: 27%;
-				font-size: 18px;
-				line-height: 24px;
+				@extend %text-icon-header-767;
 			}
 
 			.together {
 				padding-left: 20.5%;
-				font-size: 18px;
-				line-height: 24px;
+				@extend %text-icon-header-767;
 			}
 		}
 
@@ -829,7 +838,7 @@
 	}
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:480px) {
 	header{
 		background-image: url("../images/Landing-page-MB/Rectangle.jpg");
 	}
@@ -1282,3 +1291,4 @@
 		}
 	}
 }
+

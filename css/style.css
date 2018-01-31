@@ -380,6 +380,10 @@ header {
       font-weight: 500;
       line-height: 13px; }
 
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  body {
+    width: 100%; } }
+
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .daily-report .button-daily-report, .members .button-members, .customers .button-customers, .projects .button-projects {
     margin-top: 0px;
@@ -580,6 +584,12 @@ header {
     background-image: url("../images/Landing-page-TB/Rectangle.jpg"); } }
 
 @media screen and (max-width: 767px) {
+  header .text-icons-header .better, header .text-icons-header .faster, header .text-icons-header .together {
+    font-size: 18px;
+    line-height: 24px; }
+  header .icons-header .ti-gift, header .icons-header .ti-alarm-clock, header .icons-header .ti-thumb-up {
+    font-size: 18px;
+    letter-spacing: 1px; }
   body {
     width: 100%; }
   header .about-us {
@@ -596,31 +606,17 @@ header {
   header .icons-header {
     padding-left: 9.5%;
     padding-top: 20px; }
-    header .icons-header .ti-gift {
-      font-size: 18px;
-      letter-spacing: 1px; }
     header .icons-header .ti-alarm-clock {
-      padding-left: 35.21%;
-      font-size: 18px;
-      letter-spacing: 1px; }
+      padding-left: 35.21%; }
     header .icons-header .ti-thumb-up {
-      padding-left: 33%;
-      font-size: 18px;
-      letter-spacing: 1px; }
+      padding-left: 33%; }
   header .text-icons-header {
     padding-left: 7%;
     padding-top: 8px; }
-    header .text-icons-header .better {
-      font-size: 18px;
-      line-height: 24px; }
     header .text-icons-header .faster {
-      padding-left: 27%;
-      font-size: 18px;
-      line-height: 24px; }
+      padding-left: 27%; }
     header .text-icons-header .together {
-      padding-left: 20.5%;
-      font-size: 18px;
-      line-height: 24px; }
+      padding-left: 20.5%; }
   header .text-title-header {
     padding-top: 15px; }
     header .text-title-header p {
