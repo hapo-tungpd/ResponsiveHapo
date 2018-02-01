@@ -31,8 +31,31 @@ header .icons-header .ti-gift, header .icons-header .ti-alarm-clock, header .ico
 .today-i-learnt .today-i-learnt-header .ti-bookmark-alt, .daily-report .daily-report-header .ti-write, .members .members-header .ti-user, .customers .customers-header .ti-face-smile, .projects .projects-header .ti-calendar {
   float: left;
   font-size: 36px;
+  color: #444444; }
+
+.today-i-learnt .today-i-learnt-header p, .daily-report .daily-report-header p, .members .members-header p, .customers .customers-header p, .projects .projects-header p {
+  float: left;
   color: #444444;
-  padding-top: 13px; }
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 32px;
+  font-family: Roboto-Light; }
+
+.today-i-learnt .today-i-learnt-title p, .daily-report .daily-report-title p, .members .members-title p, .customers .customers-title p, .projects .projects-title p {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px; }
+
+.members .members-content .list-members p, .customers .customers-content .list-customers p {
+  color: #283238;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: justify; }
+
+.today-i-learnt .button-today-i-learnt, .daily-report .button-daily-report, .members .button-members, .customers .button-customers, .projects .button-projects {
+  padding-top: 30px;
+  padding-bottom: 100px; }
 
 header .text-icons-header .better, header .text-icons-header .faster, header .text-icons-header .together, .our-customers .our-customers-content .content-our-customers {
   font-size: 36px;
@@ -41,37 +64,12 @@ header .text-icons-header .better, header .text-icons-header .faster, header .te
   color: #283238;
   font-family: Roboto-Light; }
 
-.today-i-learnt .today-i-learnt-header p, .daily-report .daily-report-header p, .members .members-header p, .customers .customers-header p, .projects .projects-header p {
-  padding-left: 19px;
-  color: #444444;
-  font-size: 48px;
-  float: left;
-  font-weight: 300;
-  line-height: 63px;
-  font-family: Roboto-Light; }
-
 .btn-sign-in:hover, .start-now:hover, .our-customers .group-our-customers .our-customers-avatar:hover {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out; }
-
-.today-i-learnt .today-i-learnt-title p, .daily-report .daily-report-title p, .members .members-title p, .customers .customers-title p, .projects .projects-title p {
-  color: #283238;
-  font-size: 14px;
-  font-style: italic;
-  line-height: 19px; }
-
-.today-i-learnt .content-today-i-learnt .today-i-learnt-content p, .daily-report .content-daily-report .daily-report-detail p, .members .members-content .list-members p, .customers .customers-content .list-customers p, .projects .projects-content p {
-  color: #283238;
-  font-size: 13px;
-  line-height: 24px;
-  text-align: justify; }
-
-.today-i-learnt .button-today-i-learnt, .daily-report .button-daily-report, .members .button-members, .customers .button-customers, .projects .button-projects {
-  padding-top: 30px;
-  padding-bottom: 100px; }
 
 p,
 h1,
@@ -165,31 +163,68 @@ header {
   width: 100%;
   -webkit-box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); }
-  .today-i-learnt .today-i-learnt-header {
-    padding-top: 100px; }
+  .today-i-learnt .today-i-learnt-header p {
+    padding-left: 13px; }
   .today-i-learnt .today-i-learnt-title {
-    padding-top: 16px;
+    padding-top: 15px;
     padding-bottom: 25px; }
-  .today-i-learnt .image-today-i-learnt {
-    margin-top: -121px; }
-    .today-i-learnt .image-today-i-learnt img {
-      max-width: 100%; }
-  .today-i-learnt .button-today-i-learnt {
-    margin-top: -83px; }
+  .today-i-learnt .image-today-i-learnt img {
+    width: 100%; }
+  .today-i-learnt .content-today-i-learnt .today-i-learnt-content p {
+    color: #283238;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: justify; }
+
+.pc-view .image-today-i-learnt {
+  margin-top: 100px; }
+
+.pc-view .today-i-learnt-header {
+  margin-top: 100px; }
+  .pc-view .today-i-learnt-header .ti-bookmark-alt {
+    float: left;
+    padding-top: 0px; }
+  .pc-view .today-i-learnt-header p {
+    float: left;
+    line-height: 36px;
+    padding-left: 10px; }
+
+.pc-view .today-i-learnt-title {
+  padding-top: 24px; }
 
 .daily-report {
-  width: 100%; }
-  .daily-report .daily-report-header {
-    padding-top: 100px; }
+  width: 100%;
+  -webkit-box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); }
+  .daily-report .daily-report-header p {
+    padding-left: 13px;
+    line-height: 37px; }
   .daily-report .daily-report-title {
-    padding-top: 16px;
+    padding-top: 15px;
     padding-bottom: 25px; }
-  .daily-report .daily-report-img {
-    margin-top: -108px; }
-    .daily-report .daily-report-img img {
-      max-width: 100%; }
-  .daily-report .button-daily-report {
-    margin-top: -80px; }
+  .daily-report .image-daily-report img {
+    width: 100%; }
+  .daily-report .content-daily-report .daily-report-content p {
+    color: #283238;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: justify; }
+
+.pc-daily-view .image-daily-report {
+  margin-top: 100px; }
+
+.pc-daily-view .daily-report-header {
+  margin-top: 100px; }
+  .pc-daily-view .daily-report-header .ti-write {
+    float: left;
+    padding-top: 0px; }
+  .pc-daily-view .daily-report-header p {
+    float: left;
+    line-height: 36px;
+    padding-left: 10px; }
+
+.pc-daily-view .daily-report-title {
+  padding-top: 24px; }
 
 .group {
   width: 100%;
@@ -220,7 +255,10 @@ header {
   -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1); }
   .members .members-header {
-    padding-top: 100px; }
+    padding-top: 50px; }
+    .members .members-header p {
+      padding-left: 13px;
+      line-height: 41px; }
   .members .members-title {
     padding-top: 16px;
     padding-bottom: 25px; }
@@ -229,33 +267,58 @@ header {
     .members .members-content .list-members .ti-check-box {
       font-size: 18px;
       color: #8BC34A; }
-  .members .image-members {
-    margin-top: -108px;
-    text-align: center; }
-    .members .image-members img {
-      max-width: 100%; }
-  .members .button-members {
-    margin-top: -92px; }
+  .members .members-content .excep-members {
+    padding-top: 0px; }
+  .members .image-members img {
+    max-width: 100%; }
+
+.pc-members-view .members-header {
+  padding-top: 100px; }
+  .pc-members-view .members-header .ti-user {
+    padding-top: 0px;
+    float: left; }
+  .pc-members-view .members-header p {
+    padding-left: 13px;
+    float: left; }
+
+.pc-members-view .image-members img {
+  padding-top: 100px; }
 
 .customers {
   width: 100%; }
   .customers .customers-header {
-    padding-top: 100px; }
+    padding-top: 50px; }
+    .customers .customers-header .ti-face-smile {
+      padding-top: 0px;
+      float: left; }
+    .customers .customers-header p {
+      padding-left: 13px;
+      float: left;
+      line-height: 39px; }
   .customers .customers-title {
     padding-top: 16px;
     padding-bottom: 25px; }
-  .customers .image-customers {
-    margin-top: -108px;
-    text-align: center; }
-    .customers .image-customers img {
-      max-width: 100%; }
+  .customers .image-customers img {
+    max-width: 100%; }
   .customers .customers-content .list-customers {
     padding-top: 17px; }
     .customers .customers-content .list-customers .ti-unlock, .customers .customers-content .list-customers .ti-cup, .customers .customers-content .list-customers .ti-stats-up {
       font-size: 18px;
       color: #8BC34A; }
-  .customers .button-customers {
-    margin-top: -105px; }
+  .customers .customers-content .excep-customers {
+    padding-top: 0px; }
+
+.pc-customers-view .customers-header {
+  padding-top: 100px; }
+  .pc-customers-view .customers-header .ti-user {
+    padding-top: 0px;
+    float: left; }
+  .pc-customers-view .customers-header p {
+    padding-left: 13px;
+    float: left; }
+
+.pc-customers-view .image-customers img {
+  padding-top: 100px; }
 
 .our-customers {
   width: 100%;
@@ -312,18 +375,42 @@ header {
       text-align: justify; }
 
 .projects {
-  width: 100%; }
-  .projects .projects-header {
-    padding-top: 100px; }
+  width: 100%;
+  -webkit-box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); }
+  .projects .projects-header .ti-calendar {
+    padding-top: 0px;
+    float: left; }
+  .projects .projects-header p {
+    float: left;
+    padding-left: 13px;
+    line-height: 34px; }
   .projects .projects-title {
-    padding-top: 16px;
+    padding-top: 15px;
     padding-bottom: 25px; }
-  .projects .image-projects {
-    margin-top: -122px; }
-    .projects .image-projects img {
-      max-width: 100%; }
-  .projects .button-projects {
-    margin-top: -80px; }
+  .projects .image-projects img {
+    width: 100%; }
+  .projects .content-projects .projects-content p {
+    color: #283238;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: justify; }
+
+.pc-projects-view .image-projects {
+  margin-top: 100px; }
+
+.pc-projects-view .projects-header {
+  margin-top: 100px; }
+  .pc-projects-view .projects-header .ti-bookmark-alt {
+    float: left;
+    padding-top: 0px; }
+  .pc-projects-view .projects-header p {
+    float: left;
+    line-height: 42px;
+    padding-left: 15px; }
+
+.pc-projects-view .projects-title {
+  padding-top: 15px; }
 
 .mask {
   height: 180px;
@@ -382,11 +469,30 @@ header {
 
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
   body {
-    width: 100%; } }
+    width: 100%; }
+  .mb-view {
+    display: none; }
+  .mb-daily-view {
+    display: none; }
+  .mb-members-view {
+    display: none; }
+  .mb-customers-view {
+    display: none; }
+  .mb-projects-view {
+    display: none; } }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .daily-report .button-daily-report, .members .button-members, .customers .button-customers, .projects .button-projects {
-    margin-top: 0px;
+  .mb-view {
+    display: none; }
+  .mb-daily-view {
+    display: none; }
+  .mb-members-view {
+    display: none; }
+  .mb-customers-view {
+    display: none; }
+  .mb-projects-view {
+    display: none; }
+  .daily-report .button-daily-report, .today-i-learnt .button-today-i-learnt, .members .button-members, .customers .button-customers, .projects .button-projects {
     padding-bottom: 100px; }
   body {
     width: 100%; }
@@ -414,11 +520,19 @@ header {
   .members .members-title p {
     font-size: 13.5px; }
   .customers .customers-title p {
-    font-size: 13.5px; }
-  .projects .image-projects {
-    margin-top: -110px; } }
+    font-size: 13.5px; } }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .pc-view {
+    display: none; }
+  .pc-daily-view {
+    display: none; }
+  .pc-members-view {
+    display: none; }
+  .pc-customers-view {
+    display: none; }
+  .pc-projects-view {
+    display: none; }
   body {
     width: 100%; }
   .start-now {
@@ -484,10 +598,6 @@ header {
     padding-top: 50px; }
     .today-i-learnt .today-i-learnt-header .ti-bookmark-alt {
       font-size: 30px; }
-    .today-i-learnt .today-i-learnt-header p {
-      line-height: 57px;
-      font-size: 36px;
-      padding-left: 13px; }
   .today-i-learnt .today-i-learnt-title {
     font-size: 14px;
     text-align: center; }
@@ -499,12 +609,6 @@ header {
     margin-top: 0px; }
   .daily-report .daily-report-header {
     padding-top: 50px; }
-    .daily-report .daily-report-header .ti-write {
-      font-size: 30px; }
-    .daily-report .daily-report-header p {
-      line-height: 57px;
-      font-size: 36px;
-      font-weight: 300; }
   .daily-report .daily-report-title {
     text-align: center; }
   .daily-report .button-daily-report {
@@ -518,30 +622,12 @@ header {
       width: 0px; }
   .members .image-members {
     margin-top: 0px; }
-  .members .members-header {
-    padding-top: 50px; }
-    .members .members-header .ti-user {
-      font-size: 30px; }
-    .members .members-header p {
-      font-size: 36px;
-      font-weight: 300;
-      line-height: 57px; }
   .members .members-title {
     text-align: center; }
   .members .button-members {
     text-align: center;
     margin-top: 0px;
     padding-bottom: 30.93px; }
-  .customers .image-customers {
-    margin-top: 0px; }
-  .customers .customers-header {
-    padding-top: 50px; }
-    .customers .customers-header .ti-face-smile {
-      font-size: 30px; }
-    .customers .customers-header p {
-      font-size: 36px;
-      font-weight: 300;
-      line-height: 57px; }
   .customers .customers-title {
     text-align: center; }
   .customers .button-customers {
@@ -568,8 +654,7 @@ header {
       font-size: 30px; }
     .projects .projects-header p {
       font-size: 36px;
-      font-weight: 300;
-      line-height: 57px; }
+      font-weight: 300; }
   .projects .projects-title {
     text-align: center; }
   .projects .button-projects {
@@ -584,6 +669,16 @@ header {
     background-image: url("../images/Landing-page-TB/Rectangle.jpg"); } }
 
 @media screen and (max-width: 767px) {
+  .pc-view {
+    display: none; }
+  .pc-daily-view {
+    display: none; }
+  .pc-members-view {
+    display: none; }
+  .pc-customers-view {
+    display: none; }
+  .pc-projects-view {
+    display: none; }
   header .text-icons-header .better, header .text-icons-header .faster, header .text-icons-header .together {
     font-size: 18px;
     line-height: 24px; }
@@ -628,7 +723,8 @@ header {
   .today-i-learnt .image-today-i-learnt {
     margin-top: 0px; }
   .today-i-learnt .today-i-learnt-header {
-    padding-top: 30.25px; }
+    padding-left: 15%;
+    padding-top: 30px; }
     .today-i-learnt .today-i-learnt-header .ti-bookmark-alt {
       padding-top: 5px;
       font-size: 20px; }
@@ -639,7 +735,7 @@ header {
     font-size: 13px;
     text-align: center; }
   .today-i-learnt .today-i-learnt-content {
-    padding-top: 21px; }
+    padding-top: 20px; }
   .today-i-learnt .button-today-i-learnt {
     text-align: center;
     margin-top: 0px;
@@ -647,6 +743,7 @@ header {
   .daily-report .daily-report-img {
     margin-top: 0px; }
   .daily-report .daily-report-header {
+    padding-left: 15%;
     padding-top: 30px; }
     .daily-report .daily-report-header .ti-write {
       padding-top: 5px;
@@ -658,9 +755,8 @@ header {
     font-size: 13px;
     line-height: 24px;
     text-align: center; }
-  .daily-report .content-daily-report p {
-    font-size: 13px;
-    text-align: center; }
+  .daily-report .daily-report-content {
+    padding-bottom: 20px; }
   .daily-report .button-daily-report {
     text-align: center;
     margin-top: 0px;
@@ -680,6 +776,7 @@ header {
   .our-customers .our-customers-content .content-our-customers {
     margin-top: -15px; }
   .members .members-header {
+    padding-left: 15%;
     padding-top: 30px; }
     .members .members-header .ti-user {
       padding-top: 5px;
@@ -691,13 +788,14 @@ header {
     text-align: center;
     font-size: 13px; }
   .members .image-members {
-    margin-top: 0px;
+    margin-top: 20px;
     padding-top: 20.56px; }
   .members .button-members {
     text-align: center;
     margin-top: 0px;
     padding-bottom: 30px; }
   .customers .customers-header {
+    padding-left: 15%;
     padding-top: 30px; }
     .customers .customers-header .ti-face-smile {
       padding-top: 5px;
@@ -709,13 +807,14 @@ header {
     text-align: center;
     font-size: 13px; }
   .customers .image-customers {
-    margin-top: 0px;
-    padding-bottom: 20.56px; }
+    padding-top: 20px;
+    margin-top: 0px; }
   .customers .button-customers {
     text-align: center;
     margin-top: 0px;
     padding-bottom: 30px; }
   .projects .projects-header {
+    padding-left: 15%;
     padding-top: 30px; }
     .projects .projects-header .ti-calendar {
       padding-top: 5px;
@@ -726,15 +825,13 @@ header {
   .projects .projects-title p {
     font-size: 13px;
     text-align: center; }
-  .projects .projects-content {
-    padding-top: 21px; }
-    .projects .projects-content p {
-      font-size: 13px;
-      line-height: 21px;
-      text-align: justify; }
+  .projects .projects-content p {
+    font-size: 13px;
+    line-height: 21px;
+    text-align: justify; }
   .projects .image-projects {
     text-align: center;
-    margin-top: 20px; }
+    padding-top: 20px; }
   .projects .button-projects {
     text-align: center;
     margin-top: 0px;
@@ -756,12 +853,26 @@ header {
     float: right; } }
 
 @media screen and (min-width: 481px) and (max-width: 584px) {
+  .pc-view {
+    display: none; }
+  .pc-daily-view {
+    display: none; }
+  .pc-members-view {
+    display: none; }
+  .pc-customers-view {
+    display: none; }
+  .pc-projects-view {
+    display: none; }
   .today-i-learnt .today-i-learnt-header span, .daily-report .daily-report-header span, .members .members-header span, .customers .customers-header span, .projects .projects-header span {
     margin-left: -20px; }
   header .text-icons-header .faster {
     padding-left: 21%; }
   header .text-icons-header .together {
     padding-left: 13.5%; }
+  .today-i-learnt .today-i-learnt-title p {
+    font-size: 13px; }
+  .daily-report .daily-report-title p {
+    font-size: 13px; }
   .group .group-information {
     padding-bottom: 30px; }
   .our-customers .our-customers-information .our-customers-header p {
@@ -776,11 +887,27 @@ header {
     float: left; }
   .our-customers .our-customers-content .content-our-customers {
     margin-top: -15px; }
+  .members .members-title p {
+    font-size: 13px; }
+  .customers .customers-title p {
+    font-size: 13px; }
+  .projects .projects p {
+    font-size: 13px; }
   .footer .copy-right-2017 {
     margin-top: -45px;
     padding-bottom: 10px; } }
 
 @media screen and (max-width: 480px) {
+  .pc-view {
+    display: none; }
+  .pc-daily-view {
+    display: none; }
+  .pc-members-view {
+    display: none; }
+  .pc-customers-view {
+    display: none; }
+  .pc-projects-view {
+    display: none; }
   header {
     background-image: url("../images/Landing-page-MB/Rectangle.jpg"); }
   .group .group-information {
@@ -790,10 +917,22 @@ header {
       width: 8.75px; } }
 
 @media screen and (min-width: 436px) and (max-width: 480px) {
+  .pc-view {
+    display: none; }
+  .pc-daily-view {
+    display: none; }
+  .pc-members-view {
+    display: none; }
+  .pc-customers-view {
+    display: none; }
+  .pc-projects-view {
+    display: none; }
   .today-i-learnt .today-i-learnt-header span, .daily-report .daily-report-header span, .members .members-header span, .customers .customers-header span, .projects .projects-header span {
     margin-left: -29px; }
   .today-i-learnt .today-i-learnt-header p, .daily-report .daily-report-header p, .members .members-header p, .customers .customers-header p, .projects .projects-header p {
     padding-left: 4px; }
+  .today-i-learnt .today-i-learnt-title {
+    font-size: 13px; }
   header {
     background-repeat: no-repeat; }
     header .about-us {
@@ -813,6 +952,8 @@ header {
     header .button-start-header input {
       font-size: 14;
       padding: 11px 17px; }
+  .daily-report .daily-report-title p {
+    font-size: 13px; }
   .group .group-information {
     padding-top: 38.75px;
     padding-bottom: 30px; }
@@ -830,16 +971,31 @@ header {
     float: left; }
   .our-customers .our-customers-content .content-our-customers {
     margin-top: -15px; }
+  .members .members-title p {
+    font-size: 13px; }
+  .customers .customers-title p {
+    font-size: 13px; }
+  .projects .projects-title {
+    font-size: 13px; }
   .footer .copy-right-2017 {
     margin-top: -45px;
     padding-bottom: 10px; } }
 
 @media screen and (min-width: 401px) and (max-width: 435px) {
+  .pc-view {
+    display: none; }
+  .pc-daily-view {
+    display: none; }
+  .pc-members-view {
+    display: none; }
+  .pc-customers-view {
+    display: none; }
+  .pc-projects-view {
+    display: none; }
   .today-i-learnt .today-i-learnt-header span, .daily-report .daily-report-header span, .members .members-header span, .customers .customers-header span, .projects .projects-header span {
-    font-size: 16px;
-    margin-left: -25px; }
+    margin-left: -35px; }
   .today-i-learnt .today-i-learnt-header p, .daily-report .daily-report-header p, .members .members-header p, .customers .customers-header p, .projects .projects-header p {
-    padding-left: 9px;
+    padding-left: 0px;
     font-size: 24px; }
   header {
     background-repeat: no-repeat; }
@@ -884,14 +1040,23 @@ header {
       font-size: 10px; } }
 
 @media screen and (min-width: 360px) and (max-width: 400px) {
+  .pc-view {
+    display: none; }
+  .pc-daily-view {
+    display: none; }
+  .pc-members-view {
+    display: none; }
+  .pc-customers-view {
+    display: none; }
+  .pc-projects-view {
+    display: none; }
   header .button-start-header input, .today-i-learnt .button-today-i-learnt input, .daily-report .button-daily-report input, .members .button-members input, .customers .button-customers input, .projects .button-projects input {
     padding: 7px 19px;
     font-size: 15px; }
   .today-i-learnt .today-i-learnt-header span, .daily-report .daily-report-header span, .members .members-header span, .customers .customers-header span, .projects .projects-header span {
-    font-size: 15px;
-    margin-left: -22px; }
+    margin-left: -30px; }
   .today-i-learnt .today-i-learnt-header p, .daily-report .daily-report-header p, .members .members-header p, .customers .customers-header p, .projects .projects-header p {
-    padding-left: 10px;
+    padding-left: 0px;
     font-size: 22px; }
   header {
     background-repeat: no-repeat; }

@@ -119,98 +119,140 @@ header {
 	box-shadow: 0 15px 35px 0 rgba(0,0,0,0.1);
 
 	.today-i-learnt-header {
-		padding-top: 100px;
-		
 		.ti-bookmark-alt {
 			@extend %icon-mask-header;
 		}
 
 		p {
+			padding-left: 13px;
 			@extend %text-header;
 		}
-
-		
 	}
 
 	.today-i-learnt-title {
-		padding-top: 16px;
+		padding-top: 15px;
 		padding-bottom: 25px;
 
 		p {
 			@extend %title;
 		}
 	}
-	
-	.image-today-i-learnt {
-		margin-top: -121px;
 
+	.image-today-i-learnt {
 		img {
-			max-width: 100%;
+			width: 100%;
 		}
 	}
 
-	.content-today-i-learnt {
-
+	.content-today-i-learnt{
 		.today-i-learnt-content {
-
 			p {
-				@extend %content;
+				color: $color_3;
+				font-size: 13px;
+				line-height: 21px;
+				text-align: justify;
 			}
 		}
 	}
 
 	.button-today-i-learnt {
 		@extend %button-start;
-		margin-top: -83px;
+	}
+}
+
+.pc-view {
+	.image-today-i-learnt {
+		margin-top: 100px;
+	}
+
+	.today-i-learnt-header {
+		margin-top: 100px;
+		.ti-bookmark-alt {
+			float: left;
+			padding-top: 0px;
+		}
+
+		p {
+			float: left;
+			line-height: 36px;
+			padding-left: 10px;
+		}
+	}
+
+	.today-i-learnt-title {
+		padding-top: 24px;
 	}
 }
 
 .daily-report {
 	width: 100%;
+	box-shadow: 0 15px 35px 0 rgba(0,0,0,0.1);
 
 	.daily-report-header {
-		padding-top: 100px;
 
 		.ti-write {
 			@extend %icon-mask-header;
 		}
 
 		p {
+			padding-left: 13px;
+			line-height: 37px;
 			@extend %text-header;
 		}
-		
 	}
 
 	.daily-report-title {
-			padding-top: 16px;
-			padding-bottom: 25px;
+		padding-top: 15px;
+		padding-bottom: 25px;
 
-			p {
-				@extend %title;
-			}
-		}
-
-	.content-daily-report {
-
-		.daily-report-detail {
-
-			p {
-				@extend %content;
-			}
+		p {
+			@extend %title;
 		}
 	}
 
-	.daily-report-img {
-		margin-top: -108px;
-
+	.image-daily-report {
 		img {
-			max-width: 100%;
+			width: 100%;
+		}
+	}
+
+	.content-daily-report{
+		.daily-report-content {
+			p {
+				color: $color_3;
+				font-size: 13px;
+				line-height: 21px;
+				text-align: justify;
+			}
 		}
 	}
 
 	.button-daily-report {
 		@extend %button-start;
-		margin-top: -80px;
+	}
+}
+
+.pc-daily-view {
+	.image-daily-report {
+		margin-top: 100px;
+	}
+
+	.daily-report-header {
+		margin-top: 100px;
+		.ti-write {
+			float: left;
+			padding-top: 0px;
+		}
+
+		p {
+			float: left;
+			line-height: 36px;
+			padding-left: 10px;
+		}
+	}
+
+	.daily-report-title {
+		padding-top: 24px;
 	}
 }
 
@@ -252,13 +294,15 @@ header {
 	box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
 
 	.members-header {
-		padding-top: 100px;
+		padding-top: 50px;
 		
 		.ti-user {
 			@extend %icon-mask-header;
 		}
 
 		p {
+			padding-left: 13px;
+			line-height: 41px;
 			@extend %text-header;
 		}
 	}
@@ -275,7 +319,6 @@ header {
 	.members-content {
 
 		.list-members {
-
 			padding-top: 17px;
 			p {
 				@extend %content;
@@ -286,12 +329,13 @@ header {
 				color: $color_4;
 			}
 		}
+
+		.excep-members {
+			padding-top: 0px;
+		}
 	}
 
 	.image-members {
-		margin-top: -108px;
-		text-align: center;
-
 		img {
 			max-width: 100%;
 		}
@@ -299,7 +343,26 @@ header {
 
 	.button-members {
 		@extend %button-start;
-		margin-top: -92px;
+	}
+}
+
+.pc-members-view {
+	.members-header {
+		padding-top: 100px;
+		.ti-user {
+			padding-top: 0px;
+			float: left;
+		}
+		p {
+			padding-left: 13px;
+			float: left;
+		}
+	}
+
+	.image-members {
+		img {
+			padding-top: 100px;
+		}
 	}
 }
 
@@ -307,13 +370,18 @@ header {
 	width: 100%;
 
 	.customers-header {
-		padding-top: 100px;
+		padding-top: 50px;
 		
 		.ti-face-smile {
+			padding-top: 0px;
+			float: left;
 			@extend %icon-mask-header;
 		}
 
 		p {
+			padding-left: 13px;
+			float: left;
+			line-height: 39px;
 			@extend %text-header;
 		}
 	}
@@ -328,9 +396,6 @@ header {
 	}
 
 	.image-customers {
-		margin-top: -108px;
-		text-align: center;
-
 		img {
 			max-width: 100%;
 		}
@@ -356,12 +421,36 @@ header {
 				@extend .ti-unlock;
 			}
 		}
+
+		.excep-customers {
+			padding-top: 0px;
+		}
 	}
 
 	.button-customers {
 		@extend %button-start;
-		margin-top: -105px;
 	}
+}
+
+.pc-customers-view {
+	.customers-header {
+		padding-top: 100px;
+		.ti-user {
+			padding-top: 0px;
+			float: left;
+		}
+		p {
+			padding-left: 13px;
+			float: left;
+		}
+	}
+
+	.image-customers {
+		img {
+			padding-top: 100px;
+		}
+	}
+
 }
 
 .our-customers {
@@ -444,23 +533,70 @@ header {
 	}
 }
 
+// .projects {
+// 	width: 100%;
+
+// 	.projects-header {
+// 		padding-top: 100px;
+
+// 		.ti-calendar {
+// 			@extend %icon-mask-header;
+// 		}
+
+// 		p {
+// 			@extend %text-header;
+// 		}
+// 	}
+
+// 	.projects-title {
+// 		padding-top: 16px;
+// 		padding-bottom: 25px;
+
+// 		p {
+// 			@extend %title;
+// 		}
+// 	}
+
+// 	.projects-content {
+// 		p {
+// 			@extend %content;
+// 		}
+// 	}
+
+// 	.image-projects {
+// 		margin-top: -122px;
+
+// 		img {
+// 			max-width: 100%;
+// 		}
+// 	}
+
+// 	.button-projects {
+// 		@extend %button-start;
+// 		margin-top: -80px;
+// 	}
+// }
 .projects {
 	width: 100%;
+	box-shadow: 0 15px 35px 0 rgba(0,0,0,0.1);
 
 	.projects-header {
-		padding-top: 100px;
 
 		.ti-calendar {
+			padding-top: 0px;
+			float: left;
 			@extend %icon-mask-header;
 		}
 
 		p {
+			float: left;
+			padding-left: 13px;
+			line-height: 34px;
 			@extend %text-header;
 		}
 	}
-
 	.projects-title {
-		padding-top: 16px;
+		padding-top: 15px;
 		padding-bottom: 25px;
 
 		p {
@@ -468,23 +604,49 @@ header {
 		}
 	}
 
-	.projects-content {
-		p {
-			@extend %content;
+	.image-projects {
+		img {
+			width: 100%;
 		}
 	}
 
-	.image-projects {
-		margin-top: -122px;
-
-		img {
-			max-width: 100%;
+	.content-projects{
+		.projects-content {
+			p {
+				color: $color_3;
+				font-size: 13px;
+				line-height: 21px;
+				text-align: justify;
+			}
 		}
 	}
 
 	.button-projects {
 		@extend %button-start;
-		margin-top: -80px;
+	}
+}
+
+.pc-projects-view {
+	.image-projects {
+		margin-top: 100px;
+	}
+
+	.projects-header {
+		margin-top: 100px;
+		.ti-bookmark-alt {
+			float: left;
+			padding-top: 0px;
+		}
+
+		p {
+			float: left;
+			line-height: 42px;
+			padding-left: 15px;
+		}
+	}
+
+	.projects-title {
+		padding-top: 15px;
 	}
 }
 

@@ -3,12 +3,43 @@
 	body {
 		width: 100%;
 	}
+
+	.mb-view {
+		display: none;
+	}
+	.mb-daily-view {
+		display: none;
+	}
+	.mb-members-view {
+		display: none;
+	}
+	.mb-customers-view {
+		display: none;
+	}
+	.mb-projects-view {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-	
+	.mb-view {
+		display: none;
+	}
+	.mb-daily-view {
+		display: none;
+	}
+	.mb-members-view {
+		display: none;
+	}
+	.mb-customers-view {
+		display: none;
+	}
+	.mb-projects-view {
+		display: none;
+	}
+
 	%button-992-1199 {
-		margin-top: 0px;
+		// margin-top: 0px;
 		padding-bottom: 100px;
 	}
 
@@ -51,6 +82,10 @@
 			p {
 				font-size: 13.5px;
 			}
+		}
+
+		.button-today-i-learnt {
+			@extend %button-992-1199;
 		}
 	}
 	
@@ -96,7 +131,7 @@
 
 	.projects {
 		.image-projects {
-			margin-top: -110px;
+			// margin-top: -110px;
 		}
 		.button-projects {
 			@extend %button-992-1199;
@@ -105,6 +140,21 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+	.pc-view {
+		display: none;
+	}
+	.pc-daily-view {
+		display: none;
+	}
+	.pc-members-view {
+		display: none;
+	}
+	.pc-customers-view {
+		display: none;
+	}
+	.pc-projects-view {
+		display: none;
+	}
 
  	body {
 		width: 100%;
@@ -217,9 +267,9 @@
 			}
 
 			p {
-				line-height: 57px;
-				font-size: 36px;
-				padding-left: 13px;
+				// line-height: 57px;
+				// font-size: 36px;
+				// padding-left: 13px;
 			}
 		}
 
@@ -244,13 +294,13 @@
 			padding-top: 50px;
 
 			.ti-write {
-				font-size: 30px;
+				// font-size: 30px;
 			}
 
 			p {
-				line-height: 57px;
-				font-size: 36px;
-				font-weight: 300;
+				// line-height: 57px;
+				// font-size: 36px;
+				// font-weight: 300;
 			}
 		}
 
@@ -282,16 +332,16 @@
 		}
 
 		.members-header {
-			padding-top: 50px;
+			// padding-top: 50px;
 
 			.ti-user {
-				font-size: 30px;
+				// font-size: 30px;
 			}
 
 			p {
-				font-size: 36px;
-				font-weight: 300;
-				line-height: 57px;
+				// font-size: 36px;
+				// font-weight: 300;
+				// line-height: 57px;
 			}
 		}
 
@@ -308,20 +358,20 @@
 
 	.customers {
 		.image-customers {
-			margin-top: 0px;
+			// margin-top: 0px;
 		}
 
 		.customers-header {
-			padding-top: 50px;
+			// padding-top: 50px;
 
 			.ti-face-smile {
-				font-size: 30px;
+				// font-size: 30px;
 			}
 
 			p {
-				font-size: 36px;
-				font-weight: 300;
-				line-height: 57px;
+				// font-size: 36px;
+				// font-weight: 300;
+				// line-height: 57px;
 			}
 		}
 
@@ -381,7 +431,6 @@
 			p {
 				font-size: 36px;
 				font-weight: 300;
-				line-height: 57px;
 			}
 		}
 
@@ -412,6 +461,22 @@
 }
 
 @media screen and (max-width: 767px) {
+	.pc-view {
+		display: none;
+	}
+	.pc-daily-view {
+		display: none;
+	}
+	.pc-members-view {
+		display: none;
+	}
+	.pc-customers-view {
+		display: none;
+	}
+	.pc-projects-view {
+		display: none;
+	}
+
 	%text-icon-header-767 {
 		font-size: 18px;
 		line-height: 24px;
@@ -424,7 +489,7 @@
 		width: 100%;
 	}
 
-	header {
+	header { 
 		.about-us {
 			padding-left: 45%;
 		}
@@ -504,7 +569,8 @@
 		}
 
 		.today-i-learnt-header {
-			padding-top: 30.25px;
+			padding-left: 15%;
+			padding-top: 30px;
 
 			.ti-bookmark-alt {
 				padding-top: 5px;
@@ -525,7 +591,7 @@
 		}
 
 		.today-i-learnt-content {
-			padding-top: 21px;
+			padding-top: 20px;
 		}
 
 		.button-today-i-learnt {
@@ -541,6 +607,7 @@
 		}
 
 		.daily-report-header {
+			padding-left: 15%;
 			padding-top: 30px;
 
 			.ti-write {
@@ -560,11 +627,8 @@
 			text-align: center;
 		}
 
-		.content-daily-report {
-			p {
-				font-size: 13px;
-				text-align: center;
-			}
+		.daily-report-content {
+			padding-bottom: 20px;
 		}
 
 		.button-daily-report {
@@ -611,6 +675,7 @@
 	}
 	.members {
 		.members-header {
+			padding-left: 15%;
 			padding-top: 30px;
 
 			.ti-user {
@@ -630,7 +695,7 @@
 		}
 
 		.image-members {
-			margin-top: 0px;
+			margin-top: 20px;
 			padding-top: 20.56px;
 		}
 
@@ -643,6 +708,7 @@
 
 	.customers {
 		.customers-header {
+			padding-left: 15%;
 			padding-top: 30px;
 
 			.ti-face-smile {
@@ -662,8 +728,8 @@
 		}
 
 		.image-customers {
+			padding-top: 20px;
 			margin-top: 0px;
-			padding-bottom: 20.56px;
 		}
 
 		.button-customers {
@@ -675,6 +741,7 @@
 
 	.projects {
 		.projects-header {
+			padding-left: 15%;
 			padding-top: 30px;
 
 			.ti-calendar {
@@ -696,8 +763,6 @@
 		}
 
 		.projects-content {
-			padding-top: 21px;
-
 			p {
 				font-size: 13px;
 				line-height: 21px;
@@ -707,7 +772,7 @@
 
 		.image-projects {
 			text-align: center;
-			margin-top: 20px;
+			padding-top: 20px;
 		}
 
 		.button-projects {
@@ -748,6 +813,21 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 584px) {
+	.pc-view {
+		display: none;
+	}
+	.pc-daily-view {
+		display: none;
+	}
+	.pc-members-view {
+		display: none;
+	}
+	.pc-customers-view {
+		display: none;
+	}
+	.pc-projects-view {
+		display: none;
+	}
 	%custom-header-481-584 {
 		span {
 			margin-left: -20px;
@@ -769,11 +849,23 @@
 		.today-i-learnt-header {
 			@extend %custom-header-481-584;
 		}
+
+		.today-i-learnt-title {
+			p {
+				font-size: 13px;
+			}
+		}
 	}
 
 	.daily-report {
 		.daily-report-header {
 			@extend %custom-header-481-584;
+		}
+
+		.daily-report-title {
+			p {
+				font-size: 13px;
+			}
 		}
 	}
 
@@ -816,17 +908,35 @@
 		.members-header {
 			@extend %custom-header-481-584;
 		}
+
+		.members-title {
+			p {
+				font-size: 13px;
+			}
+		}
 	}
 
 	.customers {
 		.customers-header {
 			@extend %custom-header-481-584;
 		}
+
+		.customers-title {
+			p {
+				font-size: 13px;
+			}
+		}
 	}	
 
 	.projects {
 		.projects-header {
 			@extend %custom-header-481-584;
+		}
+
+		.projects {
+			p {
+				font-size: 13px;
+			}
 		}
 	}
 
@@ -839,6 +949,21 @@
 }
 
 @media screen and (max-width:480px) {
+	.pc-view {
+		display: none;
+	}
+	.pc-daily-view {
+		display: none;
+	}
+	.pc-members-view {
+		display: none;
+	}
+	.pc-customers-view {
+		display: none;
+	}
+	.pc-projects-view {
+		display: none;
+	}
 	header{
 		background-image: url("../images/Landing-page-MB/Rectangle.jpg");
 	}
@@ -856,6 +981,21 @@
 }
 
 @media screen and (min-width: 436px) and (max-width: 480px) {
+	.pc-view {
+		display: none;
+	}
+	.pc-daily-view {
+		display: none;
+	}
+	.pc-members-view {
+		display: none;
+	}
+	.pc-customers-view {
+		display: none;
+	}
+	.pc-projects-view {
+		display: none;
+	}
 	%custom-header-436-480 {
 		span {
 			margin-left: -29px;
@@ -864,6 +1004,10 @@
 		p {
 			padding-left: 4px;
 		}
+	}
+
+	%size-text-p {
+		font-size: 13px;
 	}
 
 	header {
@@ -912,11 +1056,22 @@
 		.today-i-learnt-header {
 			@extend %custom-header-436-480;
 		}
+
+		.today-i-learnt-title {
+			@extend %size-text-p;
+		}
+
 	}
 
 	.daily-report {
 		.daily-report-header {
 			@extend %custom-header-436-480;
+		}
+
+		.daily-report-title {
+			p {
+				font-size: 13px;
+			}
 		}
 	}
 	
@@ -965,17 +1120,33 @@
 		.members-header {
 			@extend %custom-header-436-480;
 		}
+
+		.members-title {
+			p {
+				font-size: 13px;
+			}
+		}
 	}
 
 	.customers {
 		.customers-header {
 			@extend %custom-header-436-480;
 		}
+
+		.customers-title {
+			p {
+				font-size: 13px;
+			}
+		}
 	}	
 
 	.projects {
 		.projects-header {
 			@extend %custom-header-436-480;
+		}
+
+		.projects-title {
+			font-size: 13px;
 		}
 	}
 
@@ -988,14 +1159,28 @@
 }
 
 @media screen and (min-width: 401px) and (max-width: 435px){
+	.pc-view {
+		display: none;
+	}
+	.pc-daily-view {
+		display: none;
+	}
+	.pc-members-view {
+		display: none;
+	}
+	.pc-customers-view {
+		display: none;
+	}
+	.pc-projects-view {
+		display: none;
+	}
 	%custom-header-401-435 {
 		span {
-			font-size: 16px;
-			margin-left: -25px;
+			margin-left: -35px;
 		}
 
 		p {
-			padding-left: 9px;
+			padding-left: 0px;
 			font-size: 24px;
 		}
 	}
@@ -1126,18 +1311,32 @@
 }
 
 @media screen and (min-width: 360px) and (max-width: 400px){
+	.pc-view {
+		display: none;
+	}
+	.pc-daily-view {
+		display: none;
+	}
+	.pc-members-view {
+		display: none;
+	}
+	.pc-customers-view {
+		display: none;
+	}
+	.pc-projects-view {
+		display: none;
+	}
 	%custom-button-360-400 {
 		padding: 7px 19px;
 		font-size: 15px;
 	}
 	%custom-header-360-400 {
 		span {
-			font-size: 15px;
-			margin-left: -22px;
+			margin-left: -30px;
 		}
 
 		p {
-			padding-left: 10px;
+			padding-left: 0px;
 			font-size: 22px;
 		}
 	}
