@@ -1,14 +1,4 @@
 @import "variables";
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 !important;
-}
-
 .btn-sign-in {
 	&:hover {
 		@extend %transition;
@@ -16,7 +6,6 @@ h6 {
 		background: linear-gradient(135deg, #B4EC51 0%,#429321 100%);
 	}
 }
-
 .start-now {
 	padding: 15px 45px;
 	border-radius: 100px;
@@ -29,13 +18,11 @@ h6 {
 	letter-spacing: 1px;
 	cursor: pointer;
 	line-height: 21px;
-
 	&:hover {
 		background: linear-gradient(135deg, #B4EC51 0%,#429321 100%);
 		@extend %transition;
 	}
 }
-
 body {
 	margin: 0px;
 	padding: 0px;
@@ -43,7 +30,6 @@ body {
 	font-size: 13px;
 	font-family: Roboto-Regular;
 }
-
 header {
 	width: 100%;
 	background-image: url("../images/Landing-page-PC/banner.jpg");
@@ -85,7 +71,7 @@ header {
 	}
 	.text-icons-header {
 		padding-top: 14px;
-		.better{
+		.better,.faster{
 			@extend %text-general;
 		}
 		.faster {
@@ -101,7 +87,7 @@ header {
 		padding-top: 53px;
 		p{
 			text-align: center;
-			color: #283238;	
+			color: $color_3;	
 			font-size: 18px;	
 			line-height: 24px;
 			font-family: Roboto-Italic;
@@ -113,170 +99,133 @@ header {
 		padding-bottom: 233px;
 	}
 }
-
 .today-i-learnt {
 	width: 100%;
 	box-shadow: 0 15px 35px 0 rgba(0,0,0,0.1);
-
 	.today-i-learnt-header {
 		.ti-bookmark-alt {
 			@extend %icon-mask-header;
 		}
-
 		p {
 			padding-left: 13px;
 			@extend %text-header;
 		}
 	}
-
 	.today-i-learnt-title {
 		padding-top: 15px;
 		padding-bottom: 25px;
-
 		p {
 			@extend %title;
 		}
 	}
-
 	.image-today-i-learnt {
 		img {
 			width: 100%;
 		}
 	}
-
 	.content-today-i-learnt{
 		.today-i-learnt-content {
 			p {
-				color: $color_3;
-				font-size: 13px;
-				line-height: 21px;
-				text-align: justify;
+				@extend %content;
 			}
 		}
 	}
-
 	.button-today-i-learnt {
 		@extend %button-start;
 	}
 }
-
 .pc-view {
 	.image-today-i-learnt {
 		margin-top: 100px;
 	}
-
 	.today-i-learnt-header {
 		margin-top: 100px;
 		.ti-bookmark-alt {
 			float: left;
 			padding-top: 0px;
 		}
-
 		p {
 			float: left;
 			line-height: 36px;
 			padding-left: 10px;
 		}
 	}
-
 	.today-i-learnt-title {
 		padding-top: 24px;
 	}
 }
-
 .daily-report {
 	width: 100%;
 	box-shadow: 0 15px 35px 0 rgba(0,0,0,0.1);
-
 	.daily-report-header {
-
 		.ti-write {
 			@extend %icon-mask-header;
 		}
-
 		p {
 			padding-left: 13px;
 			line-height: 37px;
 			@extend %text-header;
 		}
 	}
-
 	.daily-report-title {
 		padding-top: 15px;
 		padding-bottom: 25px;
-
 		p {
 			@extend %title;
 		}
 	}
-
 	.image-daily-report {
 		img {
 			width: 100%;
 		}
 	}
-
 	.content-daily-report{
 		.daily-report-content {
 			p {
-				color: $color_3;
-				font-size: 13px;
-				line-height: 21px;
-				text-align: justify;
+				@extend %content;
 			}
 		}
 	}
-
 	.button-daily-report {
 		@extend %button-start;
 	}
 }
-
 .pc-daily-view {
 	.image-daily-report {
 		margin-top: 100px;
 	}
-
 	.daily-report-header {
 		margin-top: 100px;
 		.ti-write {
 			float: left;
 			padding-top: 0px;
 		}
-
 		p {
 			float: left;
 			line-height: 36px;
 			padding-left: 10px;
 		}
 	}
-
 	.daily-report-title {
 		padding-top: 24px;
 	}
 }
-
 .group {
 	width: 100%;
 	background: linear-gradient(315deg, #B4EC51 0%, #429321 100%);
-
 	.group-information {
 		padding-top: 68.75px;
 		padding-bottom: 70px;
-
 		.info {
 			float: left;
 			width: 257px;
-		
 			.avatar {
 				margin: auto;
 				width: 109.5px;
-
 				img {
 					max-width: 100%;
 					padding-bottom: 10.75px;
 				}
-
 				p {
 					color: $color_1;
 					text-align: center;
@@ -288,64 +237,51 @@ header {
 		}	
 	}
 }
-
 .members {
 	width: 100%;
 	box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
-
 	.members-header {
 		padding-top: 50px;
-		
 		.ti-user {
 			@extend %icon-mask-header;
 		}
-
 		p {
 			padding-left: 13px;
 			line-height: 41px;
 			@extend %text-header;
 		}
 	}
-
 	.members-title {
 		padding-top: 16px;
 		padding-bottom: 25px;
-
 		p {
 			@extend %title;
 		}
 	}
-
 	.members-content {
-
 		.list-members {
 			padding-top: 17px;
 			p {
 				@extend %content;
 			}
-
 			.ti-check-box {
 				font-size: 18px;
 				color: $color_4;
 			}
 		}
-
 		.excep-members {
 			padding-top: 0px;
 		}
 	}
-
 	.image-members {
 		img {
 			max-width: 100%;
 		}
 	}
-
 	.button-members {
 		@extend %button-start;
 	}
 }
-
 .pc-members-view {
 	.members-header {
 		padding-top: 100px;
@@ -358,26 +294,21 @@ header {
 			float: left;
 		}
 	}
-
 	.image-members {
 		img {
 			padding-top: 100px;
 		}
 	}
 }
-
 .customers {
 	width: 100%;
-
 	.customers-header {
 		padding-top: 50px;
-		
 		.ti-face-smile {
 			padding-top: 0px;
 			float: left;
 			@extend %icon-mask-header;
 		}
-
 		p {
 			padding-left: 13px;
 			float: left;
@@ -385,53 +316,43 @@ header {
 			@extend %text-header;
 		}
 	}
-
 	.customers-title {
 		padding-top: 16px;
 		padding-bottom: 25px;
-
 		p {
 			@extend %title;
 		}
 	}
-
 	.image-customers {
 		img {
 			max-width: 100%;
 		}
 	}
-
 	.customers-content {
 		.list-customers {
 			padding-top: 17px;
 			p {
 				@extend %content
 			}
-
 			.ti-unlock {
 				font-size: 18px;
 				color: $color_4;
 			}
-
 			.ti-cup {
 				@extend .ti-unlock;
 			}
-
 			.ti-stats-up {
 				@extend .ti-unlock;
 			}
 		}
-
 		.excep-customers {
 			padding-top: 0px;
 		}
 	}
-
 	.button-customers {
 		@extend %button-start;
 	}
 }
-
 .pc-customers-view {
 	.customers-header {
 		padding-top: 100px;
@@ -444,25 +365,19 @@ header {
 			float: left;
 		}
 	}
-
 	.image-customers {
 		img {
 			padding-top: 100px;
 		}
 	}
-
 }
-
 .our-customers {
 	width: 100%;
 	background-image: url('../images/Landing-page-PC/Rectangle-3.jpg');
-
 	.our-customers-information {
 		padding-top: 50px;
-
 		.our-customers-header {
 			text-align: center;
-
 			p {
 				color: $color_1;
 				line-height: 63px;
@@ -474,21 +389,17 @@ header {
 	}
 	.group-our-customers {
 		padding-top: 34px;
-
 		.our-customers-avatar {
 			.img-hover {
 				padding-top: 14px;
 			}
-
 			&:hover{
-
 				-moz-transform: scale(1.2);
 			 	-webkit-transform: scale(1.2);
 			 	transform: scale(1.2);
 			 	@extend %transition;
 			}
 			text-align: center;
-
 			.name {
 				color: $color_1;
 				font-size: 13px;
@@ -497,7 +408,6 @@ header {
 				text-align: center;
 				padding-top: 16px;
 			}
-
 			.job {
 				color: $color_1;	
 				font-weight: 300;
@@ -515,13 +425,11 @@ header {
 			opacity: 0.4;
 			color: $color_1;
 		}
-
 		.ti-quote-right {
 			margin-top: -36px;
 			padding-bottom: 29px;
 			@extend .ti-quote-left;
 		}
-
 		.content-our-customers{
 			margin-top: -24px;
 			@extend %text-general;
@@ -532,62 +440,15 @@ header {
 		}
 	}
 }
-
-// .projects {
-// 	width: 100%;
-
-// 	.projects-header {
-// 		padding-top: 100px;
-
-// 		.ti-calendar {
-// 			@extend %icon-mask-header;
-// 		}
-
-// 		p {
-// 			@extend %text-header;
-// 		}
-// 	}
-
-// 	.projects-title {
-// 		padding-top: 16px;
-// 		padding-bottom: 25px;
-
-// 		p {
-// 			@extend %title;
-// 		}
-// 	}
-
-// 	.projects-content {
-// 		p {
-// 			@extend %content;
-// 		}
-// 	}
-
-// 	.image-projects {
-// 		margin-top: -122px;
-
-// 		img {
-// 			max-width: 100%;
-// 		}
-// 	}
-
-// 	.button-projects {
-// 		@extend %button-start;
-// 		margin-top: -80px;
-// 	}
-// }
 .projects {
 	width: 100%;
 	box-shadow: 0 15px 35px 0 rgba(0,0,0,0.1);
-
 	.projects-header {
-
 		.ti-calendar {
 			padding-top: 0px;
 			float: left;
 			@extend %icon-mask-header;
 		}
-
 		p {
 			float: left;
 			padding-left: 13px;
@@ -598,58 +459,46 @@ header {
 	.projects-title {
 		padding-top: 15px;
 		padding-bottom: 25px;
-
 		p {
 			@extend %title;
 		}
 	}
-
 	.image-projects {
 		img {
 			width: 100%;
 		}
 	}
-
 	.content-projects{
 		.projects-content {
 			p {
-				color: $color_3;
-				font-size: 13px;
-				line-height: 21px;
-				text-align: justify;
+				@extend %content;
 			}
 		}
 	}
-
 	.button-projects {
 		@extend %button-start;
 	}
 }
-
 .pc-projects-view {
 	.image-projects {
 		margin-top: 100px;
 	}
-
 	.projects-header {
 		margin-top: 100px;
 		.ti-bookmark-alt {
 			float: left;
 			padding-top: 0px;
 		}
-
 		p {
 			float: left;
 			line-height: 42px;
 			padding-left: 15px;
 		}
 	}
-
 	.projects-title {
 		padding-top: 15px;
 	}
 }
-
 .mask {
 	height: 180px;
 	width: 1920px;
@@ -657,58 +506,44 @@ header {
 	background-color: #39474E;
 	box-shadow: 0 15px 35px 0 rgba(0,0,0,0.1);
 }
-
 .footer {
-	width: 100%;
 	border: 1px solid #ECEFF1;
 	background-color: #39474E;
 	box-shadow: 0 15px 35px 0 rgba(0,0,0,0.1);
-
 	.logo-footer {
 		padding-top: 45px;
-
 		label {
 			width: 96px;
 			height: 29px;
-
 			img {
 				max-width: 100%;
 			}
 		}
 	}
-
 	.group-footer {
 		padding-top: 54px;
-
 		span {
-			font-size: 13px;
 			color: $color_4;
 			font-weight: 500;
 			line-height: 18px;
-			font-family: Roboto-Regular;
 		}
-
 		.text-top-footer {
 			font-size: 10px;
 			padding-top: 14px;
 			font-weight: 500;
 			color: $color_5;
 			list-style: none;
-
 			a {
 				color: $color_5;
 			}
 		}
-
 		.text-bot-footer {
 			padding-top: 7px;
 			@extend .text-top-footer;
 		}
 	}
-
 	.group-link-footer {
 		padding-top: 108px;
-
 		a {
 			font-size: 13px;
 			text-decoration: none;
@@ -716,11 +551,9 @@ header {
 			line-height: 13px;
 		}
 	}
-
 	.copy-right-2017 {
 		margin-top: -18px;
 		padding-bottom: 57px;
-
 		p {
 			font-size: 10px;
 			color: $color_5;
