@@ -1,15 +1,16 @@
 @import "variables";
+
 .btn-sign-in {
 	&:hover {
 		@extend %transition;
 		color: $color_1;
-		background: linear-gradient(135deg, #B4EC51 0%,#429321 100%);
+		@include custom-backgroud(135deg);
 	}
 }
 .start-now {
 	padding: 15px 45px;
 	border-radius: 100px;
-	background: linear-gradient(311.12deg, #B4EC51 0%, #429321 100%);	
+	@include custom-backgroud(311.12deg);	
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
 	color: $color_1;
 	border: none;
@@ -19,14 +20,14 @@
 	cursor: pointer;
 	line-height: 21px;
 	&:hover {
-		background: linear-gradient(135deg, #B4EC51 0%,#429321 100%);
+		@include custom-backgroud(135deg);
 		@extend %transition;
 	}
 }
 body {
 	margin: 0px;
 	padding: 0px;
-	width: 1920px;
+	// width: 1920px;
 	font-size: 13px;
 	font-family: Roboto-Regular;
 }
@@ -212,7 +213,7 @@ header {
 }
 .group {
 	width: 100%;
-	background: linear-gradient(315deg, #B4EC51 0%, #429321 100%);
+	@include custom-backgroud(315deg);
 	.group-information {
 		padding-top: 68.75px;
 		padding-bottom: 70px;
@@ -498,13 +499,6 @@ header {
 	.projects-title {
 		padding-top: 15px;
 	}
-}
-.mask {
-	height: 180px;
-	width: 1920px;
-	border: 1px solid #ECEFF1;
-	background-color: #39474E;
-	box-shadow: 0 15px 35px 0 rgba(0,0,0,0.1);
 }
 .footer {
 	border: 1px solid #ECEFF1;

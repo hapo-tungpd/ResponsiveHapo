@@ -85,3 +85,7 @@ h5,
 h6 {
   margin: 0 !important;
 }
+
+@mixin custom-backgroud($deg){
+	background: linear-gradient($deg, #B4EC51 0%, #429321 100%);
+}

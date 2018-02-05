@@ -109,7 +109,6 @@ h6 {
 body {
   margin: 0px;
   padding: 0px;
-  width: 1920px;
   font-size: 13px;
   font-family: Roboto-Regular; }
 
@@ -396,14 +395,6 @@ header {
 
 .pc-projects-view .projects-title {
   padding-top: 15px; }
-
-.mask {
-  height: 180px;
-  width: 1920px;
-  border: 1px solid #ECEFF1;
-  background-color: #39474E;
-  -webkit-box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); }
 
 .footer {
   border: 1px solid #ECEFF1;
