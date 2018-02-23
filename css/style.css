@@ -1,0 +1,831 @@
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("../fonts/Roboto-Light.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../fonts/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Italic';
+  src: url("../fonts/Roboto-Italic.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url("../fonts/Roboto-Medium.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-MediumItalic';
+  src: url("../fonts/Roboto-MediumItalic.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-LightItalic';
+  src: url("../fonts/Roboto-LightItalic.ttf"); }
+
+header .icons-header .ti-gift, header .icons-header .ti-alarm-clock, header .icons-header .ti-thumb-up {
+  float: left;
+  font-size: 48px;
+  letter-spacing: 4px;
+  color: #283238; }
+
+.today-i-learnt .today-i-learnt-header .ti-bookmark-alt, .daily-report .daily-report-header .ti-write, .members .members-header .ti-user, .customers .customers-header .ti-face-smile, .projects .projects-header .ti-calendar {
+  float: left;
+  font-size: 36px;
+  color: #444444; }
+
+.today-i-learnt .today-i-learnt-header p, .daily-report .daily-report-header p, .members .members-header p, .customers .customers-header p, .projects .projects-header p {
+  float: left;
+  color: #444444;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 32px;
+  font-family: Roboto-Light; }
+
+.today-i-learnt .today-i-learnt-title p, .daily-report .daily-report-title p, .members .members-title p, .customers .customers-title p, .projects .projects-title p {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px; }
+
+.today-i-learnt .content-today-i-learnt .today-i-learnt-content p, .daily-report .content-daily-report .daily-report-content p, .members .members-content .list-members p, .customers .customers-content .list-customers p, .projects .content-projects .projects-content p {
+  color: #283238;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: justify; }
+
+.today-i-learnt .button-today-i-learnt, .daily-report .button-daily-report, .members .button-members, .customers .button-customers, .projects .button-projects {
+  padding-top: 30px;
+  padding-bottom: 100px; }
+
+header .text-icons-header .better, header .text-icons-header .faster, header .text-icons-header .together, .our-customers .our-customers-content .content-our-customers {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+  color: #283238;
+  font-family: Roboto-Light; }
+
+.btn-sign-in:hover, .start-now:hover, .our-customers .group-our-customers .our-customers-avatar:hover {
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important; }
+
+.btn-sign-in:hover {
+  color: #FFFFFF;
+  background: -webkit-linear-gradient(315deg, #B4EC51 0%, #429321 100%);
+  background: -o-linear-gradient(315deg, #B4EC51 0%, #429321 100%);
+  background: linear-gradient(135deg, #B4EC51 0%, #429321 100%); }
+
+.start-now {
+  padding: 15px 45px;
+  border-radius: 100px;
+  background: -webkit-linear-gradient(138.88deg, #B4EC51 0%, #429321 100%);
+  background: -o-linear-gradient(138.88deg, #B4EC51 0%, #429321 100%);
+  background: linear-gradient(311.12deg, #B4EC51 0%, #429321 100%);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  line-height: 21px; }
+  .start-now:hover {
+    background: -webkit-linear-gradient(315deg, #B4EC51 0%, #429321 100%);
+    background: -o-linear-gradient(315deg, #B4EC51 0%, #429321 100%);
+    background: linear-gradient(135deg, #B4EC51 0%, #429321 100%); }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;
+  font-family: Roboto-Regular; }
+
+header {
+  width: 100%;
+  background-image: url("../images/Landing-page-PC/banner.jpg"); }
+  header .sign-in {
+    padding-top: 43px; }
+    header .sign-in input {
+      padding: 10px 16px;
+      border: 2px solid #8BC34A;
+      border-radius: 100px;
+      color: #8BC34A;
+      cursor: pointer;
+      font-size: 12px;
+      letter-spacing: 1px;
+      background-color: unset;
+      float: right; }
+    header .sign-in .about-us {
+      line-height: 41px; }
+  header .image-header {
+    text-align: center;
+    padding-top: 165px; }
+  header .icons-header {
+    padding-left: 3.34%;
+    padding-top: 53px; }
+    header .icons-header .ti-alarm-clock {
+      padding-left: 37%; }
+    header .icons-header .ti-thumb-up {
+      padding-left: 30.9%; }
+  header .text-icons-header {
+    padding-top: 14px; }
+    header .text-icons-header .faster {
+      padding-left: 29.74%; }
+    header .text-icons-header .together {
+      padding-left: 20.66%; }
+  header .text-title-header {
+    padding-top: 53px; }
+    header .text-title-header p {
+      text-align: center;
+      color: #283238;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: Roboto-Italic; }
+  header .button-start-header {
+    text-align: center;
+    padding-top: 31px;
+    padding-bottom: 233px; }
+
+.today-i-learnt {
+  width: 100%;
+  -webkit-box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); }
+  .today-i-learnt .today-i-learnt-header p {
+    padding-left: 13px; }
+  .today-i-learnt .today-i-learnt-title {
+    padding-top: 15px;
+    padding-bottom: 25px; }
+  .today-i-learnt .image-today-i-learnt img {
+    width: 100%; }
+
+.pc-view .image-today-i-learnt {
+  margin-top: 100px; }
+
+.pc-view .today-i-learnt-header {
+  margin-top: 100px; }
+  .pc-view .today-i-learnt-header .ti-bookmark-alt {
+    float: left;
+    padding-top: 0px; }
+  .pc-view .today-i-learnt-header p {
+    float: left;
+    line-height: 36px;
+    padding-left: 10px; }
+
+.pc-view .today-i-learnt-title {
+  padding-top: 24px; }
+
+.daily-report {
+  width: 100%;
+  -webkit-box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); }
+  .daily-report .daily-report-header p {
+    padding-left: 13px;
+    line-height: 37px; }
+  .daily-report .daily-report-title {
+    padding-top: 15px;
+    padding-bottom: 25px; }
+  .daily-report .image-daily-report img {
+    width: 100%; }
+
+.pc-daily-view .image-daily-report {
+  margin-top: 100px; }
+
+.pc-daily-view .daily-report-header {
+  margin-top: 100px; }
+  .pc-daily-view .daily-report-header .ti-write {
+    float: left;
+    padding-top: 0px; }
+  .pc-daily-view .daily-report-header p {
+    float: left;
+    line-height: 36px;
+    padding-left: 10px; }
+
+.pc-daily-view .daily-report-title {
+  padding-top: 24px; }
+
+.group {
+  width: 100%;
+  background: -webkit-linear-gradient(135deg, #B4EC51 0%, #429321 100%);
+  background: -o-linear-gradient(135deg, #B4EC51 0%, #429321 100%);
+  background: linear-gradient(315deg, #B4EC51 0%, #429321 100%); }
+  .group .group-information {
+    padding-top: 68.75px;
+    padding-bottom: 70px; }
+    .group .group-information .info {
+      float: left;
+      width: 257px; }
+      .group .group-information .info .avatar {
+        margin: auto;
+        width: 109.5px; }
+        .group .group-information .info .avatar img {
+          max-width: 100%;
+          padding-bottom: 10.75px; }
+        .group .group-information .info .avatar p {
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: 1px; }
+
+.members {
+  width: 100%;
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1); }
+  .members .members-header {
+    padding-top: 50px; }
+    .members .members-header p {
+      padding-left: 13px;
+      line-height: 41px; }
+  .members .members-title {
+    padding-top: 16px;
+    padding-bottom: 25px; }
+  .members .members-content .list-members {
+    padding-top: 17px; }
+    .members .members-content .list-members .ti-check-box {
+      font-size: 18px;
+      color: #8BC34A; }
+  .members .members-content .excep-members {
+    padding-top: 0px; }
+  .members .image-members img {
+    max-width: 100%; }
+
+.pc-members-view .members-header {
+  padding-top: 100px; }
+  .pc-members-view .members-header .ti-user {
+    padding-top: 0px;
+    float: left; }
+  .pc-members-view .members-header p {
+    padding-left: 13px;
+    float: left; }
+
+.pc-members-view .image-members img {
+  padding-top: 100px; }
+
+.customers {
+  width: 100%; }
+  .customers .customers-header {
+    padding-top: 50px; }
+    .customers .customers-header .ti-face-smile {
+      padding-top: 0px;
+      float: left; }
+    .customers .customers-header p {
+      padding-left: 13px;
+      float: left;
+      line-height: 39px; }
+  .customers .customers-title {
+    padding-top: 16px;
+    padding-bottom: 25px; }
+  .customers .image-customers img {
+    max-width: 100%; }
+  .customers .customers-content .list-customers {
+    padding-top: 17px; }
+    .customers .customers-content .list-customers .ti-unlock, .customers .customers-content .list-customers .ti-cup, .customers .customers-content .list-customers .ti-stats-up {
+      font-size: 18px;
+      color: #8BC34A; }
+  .customers .customers-content .excep-customers {
+    padding-top: 0px; }
+
+.pc-customers-view .customers-header {
+  padding-top: 100px; }
+  .pc-customers-view .customers-header .ti-user {
+    padding-top: 0px;
+    float: left; }
+  .pc-customers-view .customers-header p {
+    padding-left: 13px;
+    float: left; }
+
+.pc-customers-view .image-customers img {
+  padding-top: 100px; }
+
+.our-customers {
+  width: 100%;
+  background-image: url("../images/Landing-page-PC/Rectangle-3.jpg"); }
+  .our-customers .our-customers-information {
+    padding-top: 50px; }
+    .our-customers .our-customers-information .our-customers-header {
+      text-align: center; }
+      .our-customers .our-customers-information .our-customers-header p {
+        color: #FFFFFF;
+        line-height: 63px;
+        font-family: Roboto-Light;
+        font-size: 48px;
+        font-weight: 300; }
+  .our-customers .group-our-customers {
+    padding-top: 34px; }
+    .our-customers .group-our-customers .our-customers-avatar {
+      text-align: center; }
+      .our-customers .group-our-customers .our-customers-avatar .img-hover {
+        padding-top: 14px; }
+      .our-customers .group-our-customers .our-customers-avatar:hover {
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+      .our-customers .group-our-customers .our-customers-avatar .name {
+        color: #FFFFFF;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 14px;
+        text-align: center;
+        padding-top: 16px; }
+      .our-customers .group-our-customers .our-customers-avatar .job {
+        color: #FFFFFF;
+        font-weight: 300;
+        padding-bottom: 12px;
+        line-height: 14px;
+        font-size: 10px;
+        text-align: center; }
+  .our-customers .our-customers-content {
+    margin-top: -10px; }
+    .our-customers .our-customers-content .ti-quote-left, .our-customers .our-customers-content .ti-quote-right {
+      font-size: 72px;
+      opacity: 0.4;
+      color: #FFFFFF; }
+    .our-customers .our-customers-content .ti-quote-right {
+      margin-top: -36px;
+      padding-bottom: 29px; }
+    .our-customers .our-customers-content .content-our-customers {
+      margin-top: -24px;
+      font-size: 18px;
+      color: #FFFFFF;
+      line-height: 30px;
+      text-align: justify; }
+
+.projects {
+  width: 100%;
+  -webkit-box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); }
+  .projects .projects-header .ti-calendar {
+    padding-top: 0px;
+    float: left; }
+  .projects .projects-header p {
+    float: left;
+    padding-left: 13px;
+    line-height: 34px; }
+  .projects .projects-title {
+    padding-top: 15px;
+    padding-bottom: 25px; }
+  .projects .image-projects img {
+    width: 100%; }
+
+.pc-projects-view .image-projects {
+  margin-top: 100px; }
+
+.pc-projects-view .projects-header {
+  margin-top: 100px; }
+  .pc-projects-view .projects-header .ti-bookmark-alt {
+    float: left;
+    padding-top: 0px; }
+  .pc-projects-view .projects-header p {
+    float: left;
+    line-height: 42px;
+    padding-left: 15px; }
+
+.pc-projects-view .projects-title {
+  padding-top: 15px; }
+
+.footer {
+  border: 1px solid #ECEFF1;
+  background-color: #39474E;
+  -webkit-box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1); }
+  .footer .logo-footer {
+    padding-top: 45px; }
+    .footer .logo-footer label {
+      width: 96px;
+      height: 29px; }
+      .footer .logo-footer label img {
+        max-width: 100%; }
+  .footer .group-footer {
+    padding-top: 54px; }
+    .footer .group-footer span {
+      color: #8BC34A;
+      font-weight: 500;
+      line-height: 18px; }
+    .footer .group-footer .text-top-footer, .footer .group-footer .text-bot-footer {
+      font-size: 10px;
+      padding-top: 14px;
+      font-weight: 500;
+      color: #D0D8DC;
+      list-style: none; }
+      .footer .group-footer .text-top-footer a, .footer .group-footer .text-bot-footer a {
+        color: #D0D8DC; }
+    .footer .group-footer .text-bot-footer {
+      padding-top: 7px; }
+  .footer .group-link-footer {
+    padding-top: 108px; }
+    .footer .group-link-footer a {
+      font-size: 13px;
+      text-decoration: none;
+      color: #8BC34A;
+      line-height: 13px; }
+  .footer .copy-right-2017 {
+    margin-top: -18px;
+    padding-bottom: 57px; }
+    .footer .copy-right-2017 p {
+      font-size: 10px;
+      color: #D0D8DC;
+      font-weight: 500;
+      line-height: 13px; }
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  body {
+    width: 100%; }
+  .mb-view, .mb-daily-view, .mb-members-view, .mb-customers-view, .mb-projects-view {
+    display: none; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .mb-view, .mb-daily-view, .mb-members-view, .mb-customers-view, .mb-projects-view {
+    display: none; }
+  body {
+    width: 100%; }
+  header .icons-header {
+    padding-left: 1.34%; }
+  header .text-icons-header {
+    margin-left: 14%; }
+    header .text-icons-header .faster {
+      padding-left: 26%; }
+    header .text-icons-header .together {
+      padding-left: 17.68%; }
+  .our-customers .our-customers-content .ti-quote-right {
+    margin-right: 3px;
+    float: right; }
+  .our-customers .our-customers-content .ti-quote-left, .our-customers .our-customers-content .ti-quote-right {
+    margin-left: -13px; }
+  .our-customers .our-customers-content .content-our-customers {
+    margin-top: -15px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pc-view, .pc-daily-view, .pc-members-view, .pc-customers-view, .pc-projects-view {
+    display: none; }
+  body {
+    width: 100%; }
+  .start-now {
+    padding: 13px 27px;
+    font-size: 14px;
+    line-height: 19px; }
+  header .icons-header .ti-gift, header .icons-header .ti-alarm-clock, header .icons-header .ti-thumb-up {
+    font-size: 24px;
+    letter-spacing: 2px; }
+  header .text-icons-header .better, header .text-icons-header .faster, header .text-icons-header .together {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px; }
+  header {
+    background-repeat: no-repeat; }
+    header .about-us {
+      padding-left: 15%; }
+    header .sign-in {
+      padding-top: 20px; }
+    header .image-header {
+      padding-top: 30px; }
+      header .image-header label {
+        width: 144px;
+        height: 43px; }
+        header .image-header label img {
+          max-width: 100%; }
+    header .icons-header {
+      padding-left: 8%; }
+      header .icons-header .ti-alarm-clock {
+        padding-left: 34.61%; }
+      header .icons-header .ti-thumb-up {
+        padding-left: 32.5%; }
+    header .text-icons-header {
+      padding-left: 5.5%;
+      padding-top: 7px; }
+      header .text-icons-header .faster {
+        padding-left: 24%; }
+      header .text-icons-header .together {
+        padding-left: 18%; }
+    header .text-title-header {
+      padding-top: 15px; }
+      header .text-title-header p {
+        font-size: 14px;
+        line-height: 19px; }
+    header .button-start-header {
+      padding: 30px 0px 84.2px 0px; }
+  .today-i-learnt {
+    padding-top: 50px; }
+    .today-i-learnt .button-today-i-learnt {
+      padding-bottom: 50px; }
+  .daily-report {
+    padding-top: 50px; }
+    .daily-report .button-daily-report {
+      padding-bottom: 50px; }
+  .group .group-information {
+    padding-bottom: 50px;
+    padding-top: 45px; }
+    .group .group-information .info {
+      width: 0px; }
+  .members .button-members {
+    padding-bottom: 30.93px; }
+  .customers .button-customers {
+    padding-bottom: 30px; }
+  .our-customers .our-customers-information .our-customers-header p {
+    font-size: 36px;
+    line-height: 48px; }
+  .our-customers .our-customers-information .group-our-customers {
+    padding-top: 20px; }
+  .our-customers .our-customers-content .ti-quote-right {
+    float: right; }
+  .our-customers .our-customers-content .ti-quote-left, .our-customers .our-customers-content .ti-quote-right {
+    float: left; }
+  .our-customers .our-customers-content .content-our-customers {
+    margin-top: -15px; }
+  .projects {
+    padding-top: 50px; }
+    .projects .button-projects {
+      padding-bottom: 50px; }
+  .footer .group-footer span {
+    font-size: 12px; } }
+
+@media screen and (width: 768px) {
+  header {
+    background-image: url("../images/Landing-page-TB/Rectangle.jpg"); } }
+
+@media screen and (max-width: 767px) {
+  .pc-view, .pc-daily-view, .pc-members-view, .pc-customers-view, .pc-projects-view {
+    display: none; }
+  header .text-icons-header .better, header .text-icons-header .faster, header .text-icons-header .together {
+    font-size: 18px;
+    line-height: 24px; }
+  header .icons-header .ti-gift, header .icons-header .ti-alarm-clock, header .icons-header .ti-thumb-up {
+    font-size: 18px;
+    letter-spacing: 1px; }
+  .today-i-learnt .today-i-learnt-header, .daily-report .daily-report-header, .members .members-header, .customers .customers-header, .projects .projects-header {
+    padding-left: 15%;
+    padding-top: 30px; }
+  .today-i-learnt .today-i-learnt-header p, .daily-report .daily-report-header p {
+    font-size: 24px;
+    line-height: 32px; }
+  .today-i-learnt .today-i-learnt-header .ti-bookmark-alt, .daily-report .daily-report-header .ti-write, .members .members-header .ti-user, .members .members-header p, .customers .customers-header .ti-face-smile, .customers .customers-header p, .projects .projects-header .ti-calendar, .projects .projects-header p {
+    padding-top: 5px;
+    font-size: 20px; }
+  body {
+    width: 100%; }
+  header .about-us {
+    padding-left: 50%; }
+  header .sign-in {
+    padding-top: 13px; }
+  header .image-header {
+    padding-top: 8px; }
+    header .image-header label {
+      width: 96px; }
+      header .image-header label img {
+        max-width: 100%; }
+  header .icons-header {
+    padding-left: 9.5%;
+    padding-top: 20px; }
+    header .icons-header .ti-alarm-clock {
+      padding-left: 35.21%; }
+    header .icons-header .ti-thumb-up {
+      padding-left: 33%; }
+  header .text-icons-header {
+    padding-left: 7%;
+    padding-top: 8px; }
+    header .text-icons-header .faster {
+      padding-left: 27%; }
+    header .text-icons-header .together {
+      padding-left: 20.5%; }
+  header .text-title-header {
+    padding-top: 15px; }
+    header .text-title-header p {
+      font-size: 9px;
+      line-height: 11px; }
+  header .button-start-header {
+    padding: 15px 0px 26.75px 0px; }
+  .today-i-learnt .today-i-learnt-title p {
+    font-size: 13px; }
+  .today-i-learnt .today-i-learnt-content {
+    padding-top: 20px; }
+  .today-i-learnt .button-today-i-learnt {
+    padding-bottom: 30px; }
+  .daily-report .daily-report-title p {
+    font-size: 13px; }
+  .daily-report .daily-report-content {
+    padding-bottom: 20px; }
+  .daily-report .button-daily-report {
+    padding-bottom: 30px; }
+  .group .group-information {
+    padding-bottom: 35px; }
+  .our-customers .our-customers-information .our-customers-header p {
+    font-size: 24px;
+    line-height: 32px; }
+  .our-customers .our-customers-information .group-our-customers {
+    padding-top: 20px; }
+  .our-customers .our-customers-content .ti-quote-right {
+    float: right !important; }
+  .our-customers .our-customers-content .ti-quote-left, .our-customers .our-customers-content .ti-quote-right {
+    float: left; }
+  .our-customers .our-customers-content .content-our-customers {
+    margin-top: -15px; }
+  .members .members-header .ti-user {
+    padding-top: 14px; }
+  .members .members-title p {
+    font-size: 13px; }
+  .members .image-members {
+    margin-top: 20px;
+    padding-top: 20.56px; }
+  .members .button-members {
+    padding-bottom: 30px; }
+  .customers .customers-header .ti-face-smile {
+    padding-top: 14px; }
+  .customers .customers-title p {
+    font-size: 13px; }
+  .customers .image-customers {
+    padding-top: 20px;
+    margin-top: 0px; }
+  .customers .button-customers {
+    padding-bottom: 30px; }
+  .projects .projects-header .ti-calendar {
+    padding-top: 11px; }
+  .projects .projects-title p {
+    font-size: 13px; }
+  .projects .image-projects {
+    padding-top: 20px; }
+  .projects .button-projects {
+    padding-bottom: 30px; }
+  .footer .footer-logo label {
+    width: 96px; }
+  .footer .group-footer {
+    padding-top: 25px; }
+    .footer .group-footer span {
+      font-size: 12px; }
+  .footer .group-link-footer {
+    padding-top: 24px;
+    padding-bottom: 29px; }
+  .footer .copy-right-2017 {
+    margin-top: -45px;
+    float: right; } }
+
+@media screen and (min-width: 481px) and (max-width: 584px) {
+  .pc-view, .pc-daily-view, .pc-members-view, .pc-customers-view, .pc-projects-view {
+    display: none; }
+  header .text-icons-header .faster {
+    padding-left: 21%; }
+  header .text-icons-header .together {
+    padding-left: 13.5%; }
+  .our-customers .our-customers-information .our-customers-header p {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300; }
+  .our-customers .our-customers-information .group-our-customers {
+    padding-top: 20px; }
+  .our-customers .our-customers-content .ti-quote-right {
+    float: right !important; }
+  .our-customers .our-customers-content .ti-quote-left, .our-customers .our-customers-content .ti-quote-right {
+    float: left; }
+  .our-customers .our-customers-content .content-our-customers {
+    margin-top: -15px; }
+  .footer .copy-right-2017 {
+    margin-top: -45px;
+    padding-bottom: 10px; } }
+
+@media screen and (max-width: 480px) {
+  .pc-view, .pc-daily-view, .pc-members-view, .pc-customers-view, .pc-projects-view {
+    display: none; }
+  header {
+    background-image: url("../images/Landing-page-MB/Rectangle.jpg"); }
+  .group .group-information {
+    padding-top: 38.75px;
+    padding-bottom: 30px; }
+    .group .group-information .info {
+      width: 8.75px; } }
+
+@media screen and (min-width: 436px) and (max-width: 480px) {
+  .pc-view, .pc-daily-view, .pc-members-view, .pc-customers-view, .pc-projects-view {
+    display: none; }
+  .today-i-learnt .today-i-learnt-header span, .daily-report .daily-report-header span, .members .members-header span, .customers .customers-header span, .projects .projects-header span {
+    margin-left: -29px; }
+  .today-i-learnt .today-i-learnt-header p, .daily-report .daily-report-header p, .members .members-header p, .customers .customers-header p, .projects .projects-header p {
+    padding-left: 4px; }
+  header {
+    background-repeat: no-repeat; }
+    header .about-us {
+      padding-left: 37%; }
+    header .icons-header {
+      padding-left: 7.5%; }
+      header .icons-header .ti-alarm-clock {
+        padding-left: 32%; }
+      header .icons-header .ti-thumb-up {
+        padding-left: 29%; }
+    header .text-icons-header {
+      padding-left: 4%; }
+      header .text-icons-header .faster {
+        padding-left: 19.5%; }
+      header .text-icons-header .together {
+        padding-left: 12%; }
+    header .button-start-header input {
+      font-size: 14;
+      padding: 11px 17px; }
+  .footer .copy-right-2017 {
+    margin-top: -45px;
+    padding-bottom: 10px; } }
+
+@media screen and (min-width: 401px) and (max-width: 435px) {
+  .pc-view, .pc-daily-view, .pc-members-view, .pc-customers-view, .pc-projects-view {
+    display: none; }
+  .today-i-learnt .today-i-learnt-header span, .daily-report .daily-report-header span, .members .members-header span, .customers .customers-header span, .projects .projects-header span {
+    margin-left: -35px; }
+  .today-i-learnt .today-i-learnt-header p, .daily-report .daily-report-header p, .members .members-header p, .customers .customers-header p, .projects .projects-header p {
+    padding-left: 0px;
+    font-size: 24px; }
+  header {
+    background-repeat: no-repeat; }
+    header .about-us {
+      padding-left: 25%; }
+    header .icons-header {
+      padding-left: 7.5%; }
+      header .icons-header .ti-alarm-clock {
+        padding-left: 30.21%; }
+      header .icons-header .ti-thumb-up {
+        padding-left: 28%; }
+    header .text-icons-header {
+      padding-left: 3%; }
+      header .text-icons-header .faster {
+        padding-left: 14%; }
+      header .text-icons-header .together {
+        padding-left: 10%; }
+    header .button-start-header input {
+      font-size: 14px;
+      padding: 11px 17px; }
+  .footer .group-link-footer a {
+    font-size: 13px;
+    padding-left: 14px; }
+  .footer .copy-right-2017 {
+    margin-top: -45px;
+    padding-bottom: 10px; }
+    .footer .copy-right-2017 p {
+      font-size: 10px; } }
+
+@media screen and (min-width: 360px) and (max-width: 400px) {
+  .pc-view, .pc-daily-view, .pc-members-view, .pc-customers-view, .pc-projects-view {
+    display: none; }
+  header .button-start-header input, .today-i-learnt .button-today-i-learnt input, .daily-report .button-daily-report input, .members .button-members input, .customers .button-customers input, .projects .button-projects input {
+    padding: 7px 19px;
+    font-size: 15px; }
+  .today-i-learnt .today-i-learnt-header span, .daily-report .daily-report-header span, .members .members-header span, .customers .customers-header span, .projects .projects-header span {
+    margin-left: -30px; }
+  .today-i-learnt .today-i-learnt-header p, .daily-report .daily-report-header p, .members .members-header p, .customers .customers-header p, .projects .projects-header p {
+    padding-left: 0px;
+    font-size: 22px; }
+  header {
+    background-repeat: no-repeat; }
+    header .about-us {
+      padding-left: 14%; }
+    header .icons-header {
+      padding-left: 7%; }
+      header .icons-header .ti-alarm-clock {
+        padding-left: 30%; }
+      header .icons-header .ti-thumb-up {
+        padding-left: 25%; }
+    header .text-icons-header {
+      padding-left: 3%; }
+      header .text-icons-header .faster {
+        padding-left: 14%; }
+      header .text-icons-header .together {
+        padding-left: 1%; }
+  .footer .group-link-footer a {
+    font-size: 13px;
+    padding-left: 14px; }
+  .footer .copy-right-2017 {
+    margin-top: -45px;
+    padding-bottom: 10px; }
+    .footer .copy-right-2017 p {
+      font-size: 8.5px; } }
+
+@media screen and (width: 375px) {
+  header .sign-in .about-us {
+    padding-left: 40px; }
+  header .text-icons-header .faster {
+    padding-left: 13%; }
+  header .text-icons-header .together {
+    padding-left: 5%; } }
+
+@media screen and (width: 414px) {
+  header .text-icons-header .better {
+    padding-left: 2%; }
+  header .text-icons-header .faster {
+    padding-left: 15%; }
+  header .text-icons-header .together {
+    padding-left: 8%; } }
+
+@media screen and (width: 412px) {
+  header .text-icons-header .better {
+    padding-left: 2%; }
+  header .text-icons-header .faster {
+    padding-left: 15%; }
+  header .text-icons-header .together {
+    padding-left: 8%; } }

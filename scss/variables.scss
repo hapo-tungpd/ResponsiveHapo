@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('../fonts/Roboto-Light.ttf');  
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../fonts/Roboto-Regular.ttf');  
+}
+@font-face {
+	font-family: 'Roboto-Italic';
+	src: url('../fonts/Roboto-Italic.ttf');  
+}
+@font-face {
+	font-family: 'Roboto-Medium';
+	src: url('../fonts/Roboto-Medium.ttf');  
+}
+@font-face {
+	font-family: 'Roboto-MediumItalic';
+	src: url('../fonts/Roboto-MediumItalic.ttf');  
+}
+@font-face {
+	font-family: 'Roboto-LightItalic';
+	src: url('../fonts/Roboto-LightItalic.ttf');  
+}
+$color_1: #FFFFFF;
+$color_2: #444444;
+$color_3: #283238;
+$color_4: #8BC34A;
+$color_5: #D0D8DC;
+%icon-general {
+	float: left;
+	font-size: 48px;
+	letter-spacing: 4px;
+	color: $color_3;
+}
+%icon-mask-header {
+	float: left;
+	font-size: 36px;
+	color: $color_2;
+}
+%text-header {
+	float: left;
+	color: $color_2;
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 32px ;
+	font-family: Roboto-Light;
+}
+%title{
+	font-family: Roboto-Regular;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 24px;
+}
+%content {
+	color: $color_3;
+	font-size: 13px;
+	line-height: 21px;
+	text-align: justify;
+}
+%button-start {
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+%text-general {
+	font-size: 36px;	
+	font-weight: 300;	
+	line-height: 48px;
+	color: $color_3;
+	font-family: Roboto-Light;
+}
+%transition {
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+}
+
+@mixin custom-backgroud($deg){
+	background: linear-gradient($deg, #B4EC51 0%, #429321 100%);
+}
